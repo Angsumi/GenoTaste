@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenoTaste | Understand Your Biology. Personalize Your Wellness.</title>
+  <meta name="description" content="GenoTaste is a premier genomic wellness consulting service. We help you translate complex genetic wellness reports into practical nutrition, lifestyle, fitness, and recovery decisions. NATURE • NURTURE • KNOWLEDGE.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Logo_GenoTaste.png">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="brand-logo">
+        <img src="Logo_GenoTaste.png" alt="GenoTaste Logo" class="logo-img-nav">
+        <div class="brand-text-group">
+          <span class="brand-name">GenoTaste</span>
+          <span class="brand-tagline-sm">NATURE • NURTURE • KNOWLEDGE</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#questions" class="nav-link">Questions You Ask</a></li>
+          <li><a href="#clarity" class="nav-link">Report Clarity</a></li>
+          <li><a href="#process" class="nav-link">How It Works</a></li>
+          <li><a href="#pillars" class="nav-link">Pillars</a></li>
+          <li><a href="#why" class="nav-link">Why GenoTaste</a></li>
+          <li><a href="#packages" class="nav-link">Packages</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary trigger-booking" data-package="GenoTaste Discovery">Book a Consultation</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-links">
+        <li><a href="#questions">Questions You Ask</a></li>
+        <li><a href="#clarity">Report Clarity</a></li>
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="#pillars">Pillars</a></li>
+        <li><a href="#why">Why GenoTaste</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li style="margin-top: 1rem;">
+          <button class="btn btn-primary trigger-booking" style="width:100%" data-package="GenoTaste Discovery">Book a Consultation</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tagline">
+            <span class="hero-tagline-star">✦</span> NATURE • NURTURE • KNOWLEDGE
+          </div>
+          <h1 class="hero-title">
+            Understand Your Biology.
+            <span class="gradient-gold-text">Personalize Your Wellness.</span>
+          </h1>
+          <p class="hero-subtitle">
+            GenoTaste helps you understand your genetic wellness report and translate complex biological findings into practical, personalized decisions for your nutrition, fitness, recovery, and daily lifestyle habits.
+          </p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary trigger-booking" data-package="GenoTaste Discovery">
+              Book a Consultation
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a href="#process" class="btn btn-secondary">
+              Explore How It Works
+            </a>
+          </div>
+
+          <div class="hero-trust-badges">
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Human Interpretation</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Actionable & Practical</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>No Fear-Based Claims</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="logo-glow-wrapper">
+            <img src="Logo_GenoTaste.png" alt="GenoTaste Brand Showcase" class="hero-logo-main">
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge floating-badge-1">
+            <div class="badge-icon-gold">98%</div>
+            <div>
+              <div class="badge-text-title">Report Clarity</div>
+              <div class="badge-text-sub">From jargon to priority</div>
+            </div>
+          </div>
+
+          <div class="floating-badge floating-badge-2">
+            <div class="badge-icon-green">🌿</div>
+            <div>
+              <div class="badge-text-title">Nature + Nurture</div>
+              <div class="badge-text-sub">Personalized habits</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Questions You Already Ask Section -->
+    <section class="questions-section" id="questions">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-gold">Real Client Questions</span>
+          <h2 class="section-title">The Questions You Already Ask</h2>
+          <p class="section-subtitle">
+            You don't need a medical degree to wonder about your body. GenoTaste connects the daily health questions you care about with biological clarity.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="questions-filter">
+          <button class="filter-btn active" data-filter="all">All Topics</button>
+          <button class="filter-btn" data-filter="body">Body & Weight</button>
+          <button class="filter-btn" data-filter="energy">Fatigue & Energy</button>
+          <button class="filter-btn" data-filter="fitness">Fitness & Recovery</button>
+          <button class="filter-btn" data-filter="sleep">Sleep & Rhythms</button>
+          <button class="filter-btn" data-filter="appearance">Skin & Appearance</button>
+          <button class="filter-btn" data-filter="prevention">Preventive & Clarity</button>
+        </div>
+
+        <!-- Question Cards Grid -->
+        <div class="questions-grid">
+
+          <!-- Card 1 -->
+          <div class="question-card" data-category="body" data-question="weight">
+            <div>
+              <span class="card-topic-tag">Weight & Metabolism</span>
+              <h3 class="question-card-quote">“Eating well and exercising, but still not seeing the change you expect?”</h3>
+              <p class="question-card-desc">
+                Individual biology can influence how your body metabolizes fats, carbohydrates, and satiety signals. A generic diet ignores these tendencies.
+              </p>
+            </div>
+            <div class="question-card-action">
+              <span>Explore Biological Context</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="question-card" data-category="energy" data-question="fatigue">
+            <div>
+              <span class="card-topic-tag">Fatigue & Energy</span>
+              <h3 class="question-card-quote">“Always tired—and wondering why despite sleeping 8 hours?”</h3>
+              <p class="question-card-desc">
+                Cellular energy pathways, B-vitamin methylation variants, and nutrient transport efficiency can contribute to unexplained energy slumps.
+              </p>
+            </div>
+            <div class="question-card-action">
+              <span>Explore Biological Context</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="question-card" data-category="fitness" data-question="fitness">
+            <div>
+              <span class="card-topic-tag">Fitness & Recovery</span>
+              <h3 class="question-card-quote">“Same workout routine as your peers. Completely different results?”</h3>
+              <p class="question-card-desc">
+                Physiological traits, lactate clearance, muscle fiber dominance, and tendon recovery rates vary widely between individuals.
+              </p>
+            </div>
+            <div class="question-card-action">
+              <span>Explore Biological Context</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="question-card" data-category="sleep" data-question="caffeine">
+            <div>
+              <span class="card-topic-tag">Sleep & Caffeine</span>
+              <h3 class="question-card-quote">“Coffee at 10 PM? Some people can. Why can't you?”</h3>
+              <p class="question-card-desc">
+                Caffeine metabolism rate (CYP1A2 gene variant) governs how fast your liver clears caffeine, impacting your evening sleep architecture.
+              </p>
+            </div>
+            <div class="question-card-action">
+              <span>Explore Biological Context</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="question-card" data-category="appearance" data-question="skin">
+            <div>
+              <span class="card-topic-tag">Skin & Trait Vitality</span>
+              <h3 class="question-card-quote">“Why does my skin seem to age or react differently to environment?”</h3>
+              <p class="question-card-desc">
+                Antioxidant enzyme efficiency and collagen degradation pathways alter intrinsic skin resilience and protective nutrient needs.
+              </p>
+            </div>
+            <div class="question-card-action">
+              <span>Explore Biological Context</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="question-card" data-category="prevention" data-question="prevention">
+            <div>
+              <span class="card-topic-tag">Preventive Lifestyle</span>
+              <h3 class="question-card-quote">“Healthy today. How do I personalize my long-term habits?”</h3>
+              <p class="question-card-desc">
+                Genomics adds a personalized biological blueprint so you can invest in high-leverage lifestyle choices long before health issues arise.
+              </p>
+            </div>
+            <div class="question-card-action">
+              <span>Explore Biological Context</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="question-card" data-category="prevention" data-question="confusion">
+            <div>
+              <span class="card-topic-tag">Report Interpretation</span>
+              <h3 class="question-card-quote">“I spent money on a DNA report. What does any of this PDF mean?”</h3>
+              <p class="question-card-desc">
+                Having hundreds of technical findings without prioritization causes confusion and anxiety. GenoTaste turns raw data into clear direction.
+              </p>
+            </div>
+            <div class="question-card-action">
+              <span>Explore Biological Context</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail Drawer Modal -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-content" id="drawerContent">
+      <button class="drawer-close" id="drawerClose">&times;</button>
+      <span class="badge badge-gold" id="drawerTag">Category</span>
+      <h3 class="section-title" id="drawerQuote" style="font-size: 1.6rem; margin: 1rem 0;">Question Title</h3>
+      
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 0.4rem;">The Challenge</h4>
+        <p id="drawerDesc" style="color: var(--navy-slate); font-size: 0.95rem;"></p>
+      </div>
+
+      <div style="margin-bottom: 1.5rem; background: var(--natural-green-light); padding: 1.25rem; border-radius: var(--radius-sm);">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--natural-green-dark); margin-bottom: 0.4rem;">The GenoTaste Biological Insight</h4>
+        <p id="drawerInsight" style="color: var(--deep-charcoal); font-size: 0.95rem; font-weight: 500;"></p>
+      </div>
+
+      <div style="margin-bottom: 2rem;">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 0.4rem;">The Practical Action Step</h4>
+        <p id="drawerAction" style="color: var(--deep-charcoal); font-weight: 700; font-size: 1rem;"></p>
+      </div>
+
+      <button class="btn btn-primary trigger-booking" style="width: 100%;" data-package="GenoTaste Report Clarity Session">Discuss Your Report With GenoTaste</button>
+    </div>
+
+    <!-- Report Clarity Before vs After Section -->
+    <section class="clarity-section" id="clarity">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green">The GenoTaste Difference</span>
+          <h2 class="section-title">From Data Overload to Calm Clarity</h2>
+          <p class="section-subtitle">
+            Most genetic tests leave clients with an overwhelming 80-page PDF filled with jargon and panic-inducing alerts. We provide the bridge to practical understanding.
+          </p>
+        </div>
+
+        <div class="comparison-wrapper">
+          <div class="comparison-card-grid">
+
+            <!-- Raw Report Card -->
+            <div class="before-card">
+              <span class="card-badge-red">Raw Genetic Report</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">Without Consultation</h3>
+              <p style="font-size: 0.9rem; color: var(--navy-slate); margin-bottom: 1rem;">What happens when you only receive raw PDF findings:</p>
+              
+              <ul class="comp-list comp-list-before">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                  <span><strong>80+ pages of dense jargon</strong> and unprioritized SNP codes</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                  <span><strong>Anxiety & fear</strong> caused by uncontextualized "risk" markers</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                  <span><strong>Action paralysis</strong> — not knowing which habit to change first</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                  <span><strong>Deterministic thinking</strong> ("My genes dictate my fate")</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- GenoTaste Consultation Card -->
+            <div class="after-card">
+              <span class="card-badge-green">GenoTaste Consultation</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">With Guided Consulting</h3>
+              <p style="font-size: 0.9rem; color: var(--navy-slate); margin-bottom: 1rem;">What you experience with GenoTaste human interpretation:</p>
+
+              <ul class="comp-list comp-list-after">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span><strong>Top 3–5 prioritized focus areas</strong> aligned to your personal goals</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span><strong>Plain English explanations</strong> connecting tendencies to daily habits</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span><strong>Actionable wellness plan</strong> for nutrition, exercise, & recovery</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span><strong>Empowerment & peace of mind</strong> (Nature + Nurture in balance)</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section - "How GenoTaste Works" -->
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-gold">The Consultation Journey</span>
+          <h2 class="section-title">How GenoTaste Works</h2>
+          <p class="section-subtitle">
+            A structured, human-guided 5-step process turning raw report findings into long-term personal vitality.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+
+          <!-- Step 1 -->
+          <div class="process-step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">
+              We begin with a conversation to understand your goals, lifestyle context, diet history, daily schedule, and specific wellness concerns.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Interpret</h3>
+            <p class="step-desc">
+              We translate the technical findings in your supplied report into clear, plain-language explanations without clinical jargon.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Prioritize</h3>
+            <p class="step-desc">
+              We filter out minor noise and identify the top 3 to 5 biological insights that have high impact on your stated wellness goals.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-card">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Personalize</h3>
+            <p class="step-desc">
+              We connect your biological tendencies with practical modifications to your nutrition, exercise, recovery, and daily sleep hygiene.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-step-card">
+            <div class="step-number">5</div>
+            <h3 class="step-title">Act & Refine</h3>
+            <p class="step-desc">
+              You execute clear, manageable steps with optional structured follow-up sessions to track progress and refine your habits.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Pillars - "Nature • Nurture • Knowledge" -->
+    <section class="pillars-section" id="pillars">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green">Brand Philosophy</span>
+          <h2 class="section-title">The Three Pillars of GenoTaste</h2>
+          <p class="section-subtitle">
+            Genetics is not destiny. True genomic wellness is created at the intersection of what you inherit, how you live, and what you learn.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+
+          <!-- Pillar 1: Nature -->
+          <div class="pillar-card pillar-nature">
+            <div class="pillar-icon-wrapper">🧬</div>
+            <h3 class="pillar-title">NATURE</h3>
+            <div class="pillar-subtitle text-green">Inherited Biology</div>
+            <p class="pillar-desc">
+              Your genetic makeup provides your baseline biological tendencies, nutrient transport preferences, and physiological response patterns. It is your starting map.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Nurture -->
+          <div class="pillar-card pillar-nurture">
+            <div class="pillar-icon-wrapper">🌱</div>
+            <h3 class="pillar-title">NURTURE</h3>
+            <div class="pillar-subtitle text-gold">Modifiable Environment</div>
+            <p class="pillar-desc">
+              Your nutrition, sleep quality, stress management, exercise habits, and environment dictate how your genes express themselves. Nurture is where your power lies.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Knowledge -->
+          <div class="pillar-card pillar-knowledge">
+            <div class="pillar-icon-wrapper">💡</div>
+            <h3 class="pillar-title">KNOWLEDGE</h3>
+            <div class="pillar-subtitle text-muted">Empowered Action</div>
+            <p class="pillar-desc">
+              Understanding how Nature and Nurture interact replaces trial-and-error wellness with calm, conscious, and highly effective daily decisions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why GenoTaste Section (Positioning Table) -->
+    <section class="why-section" id="why">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-gold">Competitive Positioning</span>
+          <h2 class="section-title">Why Choose GenoTaste?</h2>
+          <p class="section-subtitle">
+            GenoTaste occupies the crucial space between a raw DNA test and generic diet advice: human-guided genomic wellness consulting.
+          </p>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="why-matrix-table">
+            <thead>
+              <tr>
+                <th>Service Attribute</th>
+                <th>Raw DNA Seller</th>
+                <th>Generic Diet Service</th>
+                <th>Medical Diagnosis</th>
+                <th class="highlight-header">GenoTaste Consulting</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Primary Deliverable</strong></td>
+                <td>80-page PDF report</td>
+                <td>Standard meal plan</td>
+                <td>Clinical diagnosis</td>
+                <td class="highlight-cell">Human interpretation & action plan</td>
+              </tr>
+              <tr>
+                <td><strong>Personal Context</strong></td>
+                <td>None (Automated)</td>
+                <td>Basic BMI / calories</td>
+                <td>Symptom / Disease focus</td>
+                <td class="highlight-cell">Biology + Lived habits & goals</td>
+              </tr>
+              <tr>
+                <td><strong>Report Prioritization</strong></td>
+                <td>No (Data overload)</td>
+                <td>Not applicable</td>
+                <td>Clinical labs only</td>
+                <td class="highlight-cell">Top 3–5 high-leverage focus areas</td>
+              </tr>
+              <tr>
+                <td><strong>Communication Tone</strong></td>
+                <td>Technical / Jargon</td>
+                <td>One-size-fits-all</td>
+                <td>Clinical / Medical</td>
+                <td class="highlight-cell">Human, clear, encouraging, non-fear</td>
+              </tr>
+              <tr>
+                <td><strong>Action Plan</strong></td>
+                <td>Generic suggestions</td>
+                <td>Generic macro targets</td>
+                <td>Prescriptions / Treatment</td>
+                <td class="highlight-cell">Tailored nutrition, fitness & sleep habits</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Packages Section -->
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green">Consultation Services</span>
+          <h2 class="section-title">Consultation Offerings</h2>
+          <p class="section-subtitle">
+            Select the level of guidance that matches your current report readiness and wellness goals.
+          </p>
+        </div>
+
+        <div class="packages-grid">
+
+          <!-- Package 1 -->
+          <div class="package-card">
+            <div>
+              <h3 class="package-name">Report Clarity Session</h3>
+              <p class="package-purpose">Guided interpretation for clients who already possess a genetic wellness report.</p>
+              
+              <ul class="package-features">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span><strong>60-Minute 1-on-1 Consultation</strong></span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Prioritized finding matrix (Top 3–5 focus areas)</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Jargon translation into plain language</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Summary overview document</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-outline-gold trigger-booking" style="width: 100%;" data-package="GenoTaste Report Clarity Session">Select Clarity Session</button>
+          </div>
+
+          <!-- Package 2: Featured -->
+          <div class="package-card featured">
+            <span class="popular-ribbon">Most Popular</span>
+            <div>
+              <h3 class="package-name">Personal Wellness Blueprint</h3>
+              <p class="package-purpose">Comprehensive report interpretation + 30-day personalized action plan.</p>
+
+              <ul class="package-features">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span><strong>Full Report Interpretation + 75-Min Session</strong></span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Personalized Nutrition & Macronutrient Guide</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Genomic Fitness & Recovery Recommendations</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>30-Day Practical Habit Implementation Blueprint</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary trigger-booking" style="width: 100%;" data-package="GenoTaste Personal Wellness Blueprint">Select Blueprint Package</button>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="package-card">
+            <div>
+              <h3 class="package-name">Complete Guidance & Follow-Up</h3>
+              <p class="package-purpose">Blueprint + structured review, accountability & plan refinement.</p>
+
+              <ul class="package-features">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span><strong>Everything in Personal Blueprint</strong></span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Two 30-Minute Follow-Up Progress Reviews</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Accountability & habit refinement support</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Direct consultant Q&A access for 60 days</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-outline-gold trigger-booking" style="width: 100%;" data-package="GenoTaste Complete Guidance & Follow-Up">Select Complete Guidance</button>
+          </div>
+
+        </div>
+
+        <!-- Quiz Recommender Banner -->
+        <div class="quiz-recommender-banner">
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Unsure Which Session Fits You Best?</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem;">Take our 30-second focus quiz to match your report status and goals with the right consultation package.</p>
+          </div>
+          <button class="btn btn-primary" id="quizTrigger">Take 30-Second Quiz</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Quiz Modal -->
+    <div class="modal-wrapper" id="quizModal">
+      <div class="modal-container">
+        <button class="modal-close" id="quizClose">&times;</button>
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="badge badge-gold">Quick Match Quiz</span>
+          <h3 class="section-title" style="font-size: 1.8rem;">Find Your Recommended Package</h3>
+        </div>
+
+        <form id="quizForm">
+          <div class="form-group">
+            <label class="form-label">1. Do you currently possess a genetic wellness report?</label>
+            <label style="display:block; margin-bottom: 0.5rem;">
+              <input type="radio" name="quizHasReport" value="yes" checked> Yes, I already have a report from a testing provider.
+            </label>
+            <label style="display:block;">
+              <input type="radio" name="quizHasReport" value="no"> No, I need guidance on getting started.
+            </label>
+          </div>
+
+          <div class="form-group" style="margin-top: 1.5rem;">
+            <label class="form-label">2. What is your primary wellness objective?</label>
+            <label style="display:block; margin-bottom: 0.5rem;">
+              <input type="radio" name="quizGoal" value="clarity" checked> Demystifying my existing PDF & removing report confusion.
+            </label>
+            <label style="display:block; margin-bottom: 0.5rem;">
+              <input type="radio" name="quizGoal" value="plan"> Creating a structured 30-day nutrition and exercise plan.
+            </label>
+            <label style="display:block;">
+              <input type="radio" name="quizGoal" value="support"> Long-term habit change, accountability, and regular follow-ups.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">See Recommendation</button>
+        </form>
+
+        <div id="quizResult" style="display: none; text-align: center; padding: 1rem 0;">
+          <span class="badge badge-green" style="margin-bottom: 1rem;">Recommended Match</span>
+          <p id="quizRecText" style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem;"></p>
+          <button class="btn btn-primary trigger-booking" id="quizBookRecBtn" style="width: 100%;">Book Recommended Consultation</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client Case Highlights & Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-gold">Client Experience</span>
+          <h2 class="section-title">Human-Centered Wellness Stories</h2>
+          <p class="section-subtitle">
+            How GenoTaste helped individuals turn complex biological data into practical daily clarity.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <p class="client-quote">
+              “I had an 80-page PDF sitting on my laptop for 6 months. I didn't know whether to change my diet or ignore the results. GenoTaste highlighted just 3 key nutrition adjustments that made an immediate difference in my energy.”
+            </p>
+            <div class="client-info">
+              <div class="client-avatar">AR</div>
+              <div>
+                <div class="client-name">Anand R.</div>
+                <div class="client-role">Software Architect • Report Clarity Client</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <p class="client-quote">
+              “Learning about my slow caffeine metabolism variant explained years of poor sleep after 2 PM coffee. The GenoTaste consultation connected my biology with my evening routine without any panic or extreme restrictions.”
+            </p>
+            <div class="client-info">
+              <div class="client-avatar">PS</div>
+              <div>
+                <div class="client-name">Priya S.</div>
+                <div class="client-role">Corporate Strategist • Personal Blueprint Client</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <p class="client-quote">
+              “As a marathon runner, I kept getting injured following generic training schedules. Understanding my tendon collagen and recovery tendencies allowed me to adjust rest days intelligently. My recovery is remarkably better.”
+            </p>
+            <div class="client-info">
+              <div class="client-avatar">VK</div>
+              <div>
+                <div class="client-name">Vikram K.</div>
+                <div class="client-role">Endurance Athlete • Complete Guidance Client</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green">Common Questions</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Transparency, ethical boundaries, and what to expect during your GenoTaste consultation.
+          </p>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>What is GenoTaste's exact role in genomic wellness?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              GenoTaste is a human-guided genomic wellness consulting brand. We do not manufacture lab tests; testing and report processing are conducted by established testing ecosystem providers. GenoTaste creates value by helping you understand your report, prioritize key findings, and translate insights into practical nutrition, fitness, and lifestyle decisions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What if I already have a genetic wellness report from another provider?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              That is perfect! Our GenoTaste Report Clarity Session is specifically designed for individuals who already possess a genetic wellness report and need expert-style human interpretation to convert complex findings into clear, prioritized action steps.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is GenoTaste a medical diagnosis or treatment service?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              No. GenoTaste provides educational genomic wellness consulting for lifestyle, nutrition, fitness, and recovery. We do not diagnose diseases, prescribe medication, or provide medical treatments. Any clinical health concerns or symptoms should always be directed to a qualified healthcare professional.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Does GenoTaste use fear-based messaging or claim genes dictate fate?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Never. We strictly uphold our core tagline: NATURE • NURTURE • KNOWLEDGE. Genetic variants represent biological tendencies, not deterministic destinies. Your daily lifestyle, nutrition, and environment (Nurture) play a profound role in how your biology expresses itself.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How are my report details and personal information protected?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              We uphold strict privacy standards. Your consultation discussions and report information remain completely confidential and are used solely for generating your personalized wellness recommendations.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Strong Final CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <span class="badge badge-gold" style="background: rgba(234, 168, 39, 0.2); color: var(--primary-gold);">Your Personalized Journey</span>
+          <h2 class="cta-title">Your Genes Are the Map. You Are the Navigator.</h2>
+          <p class="cta-desc">
+            Stop guessing with generic diets and unprioritized PDF reports. Turn your biological data into actionable personal vitality today.
+          </p>
+          <button class="btn btn-primary trigger-booking" data-package="GenoTaste Discovery" style="font-size: 1.1rem; padding: 1rem 2.25rem;">
+            Book Your Consultation Now
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Booking Modal Workflow -->
+  <div class="modal-wrapper" id="bookingModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="section-header" style="margin-bottom: 1.5rem;">
+        <span class="badge badge-gold">Consultation Intake</span>
+        <h3 class="section-title" style="font-size: 1.75rem;">Book Your GenoTaste Session</h3>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">Step towards personalized genomic wellness understanding.</p>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label">Selected Service Package</label>
+          <select class="form-control" id="bookingPackage">
+            <option value="GenoTaste Discovery">GenoTaste Discovery (Free 15-Min Goal Review)</option>
+            <option value="GenoTaste Report Clarity Session">GenoTaste Report Clarity Session (60 Min)</option>
+            <option value="GenoTaste Personal Wellness Blueprint">GenoTaste Personal Wellness Blueprint (Full Plan)</option>
+            <option value="GenoTaste Complete Guidance & Follow-Up">GenoTaste Complete Guidance & Follow-Up (60 Days)</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="sarah@example.com" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label">Phone / WhatsApp</label>
+            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Do you already have a genetic report?</label>
+          <select class="form-control">
+            <option value="yes">Yes, I have an existing report ready for interpretation</option>
+            <option value="no">No, I want to learn how to obtain a report</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Goals or Questions (Optional)</label>
+          <textarea class="form-control" rows="3" placeholder="e.g. Energy levels, exercise recovery, caffeine sensitivity, macronutrient balance..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Confirm Consultation Request</button>
+      </form>
+
+      <div id="bookingSuccess" style="display: none; text-align: center; padding: 2rem 1rem;">
+        <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--natural-green-light); color: var(--natural-green-dark); font-size: 2rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto;">✓</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Consultation Request Received!</h3>
+        <p style="color: var(--navy-slate); font-size: 0.95rem; margin-bottom: 1.5rem;">Thank you for taking the first step. Our genomic wellness consultant will reach out to confirm your date slot and provide pre-session guidance.</p>
+        <button class="btn btn-secondary" onclick="document.getElementById('bookingModal').classList.remove('active'); location.reload();">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">GenoTaste</div>
+          <p style="color: var(--natural-green); font-weight: 700; font-size: 0.75rem; letter-spacing: 1.5px; margin-bottom: 1rem;">NATURE • NURTURE • KNOWLEDGE</p>
+          <p style="font-size: 0.875rem; color: #94A3B8; max-width: 320px; line-height: 1.6;">
+            Client-facing genomic wellness consulting. Turning complex biological reports into practical nutrition, lifestyle, and vitality decisions.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 1rem;">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#questions">Questions You Ask</a></li>
+            <li><a href="#clarity">Report Clarity</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#pillars">Brand Pillars</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 1rem;">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#packages">Discovery Session</a></li>
+            <li><a href="#packages">Report Clarity</a></li>
+            <li><a href="#packages">Personal Blueprint</a></li>
+            <li><a href="#packages">Complete Guidance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 1rem;">Ethical Commitment</h4>
+          <p style="font-size: 0.825rem; color: #94A3B8; line-height: 1.6; margin-bottom: 1rem;">
+            We focus on biological tendencies and modifiable habits. We never sell fear, promise disease cures, or offer clinical medical diagnoses.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p><strong>Educational & Consulting Disclaimer:</strong> GenoTaste provides educational genomic wellness consulting services. Genetic report interpretations represent biological tendencies and associations, not clinical certainties or medical diagnoses. GenoTaste does not diagnose, treat, or prevent medical conditions. For clinical medical advice, symptoms, or medication changes, always consult a licensed healthcare professional.</p>
+        <p style="margin-top: 1rem;">© 2026 GenoTaste Genomic Wellness Consulting. All rights reserved. Powered by Nature • Nurture • Knowledge.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
