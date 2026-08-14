@@ -146,22 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 5. Booking Modal Logic
-  const bookingModal = document.getElementById('bookingModal');
-  const modalClose = document.getElementById('modalClose');
+  // 5. Booking Action Logic (Redirects to WhatsApp Link)
   const bookBtns = document.querySelectorAll('.trigger-booking');
-  const bookingPackageSelect = document.getElementById('bookingPackage');
 
   bookBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const packageName = btn.getAttribute('data-package');
-      if (packageName && bookingPackageSelect) {
-        bookingPackageSelect.value = packageName;
-      }
-      if (bookingModal) {
-        bookingModal.classList.add('active');
-      }
+      // Direct navigation to WhatsApp link
+      window.open('https://wa.link/51ls4u', '_blank');
     });
   });
 
