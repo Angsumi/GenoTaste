@@ -1492,9 +1492,15 @@ img {
 
 /* pSEO Article Layout */
 .pseo-header {
-  padding: 7.5rem 0 2rem 0;
+  padding: 9.5rem 0 2.5rem 0;
+  background: linear-gradient(180deg, #FAF8F5 0%, var(--bg-cream) 100%);
   border-bottom: 1px solid var(--border-light);
   margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .pseo-header {
+    padding: 8.5rem 0 2rem 0;
+  }
 }
 .pseo-badge {
   display: inline-block;
