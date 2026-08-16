@@ -22,25 +22,33 @@
   <div class="scroll-progress-container"><div class="scroll-progress-bar" id="scrollProgress"></div></div>
 
   <!-- Navigation Bar -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="../index.html" class="nav-brand">
-        <img src="../Logo_GenoTaste.png" alt="GenoTaste Logo" class="brand-logo-img">
-        <span class="brand-name">GenoTaste</span>
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="../index.html" class="brand-logo">
+        <img src="../Logo_GenoTaste.png" alt="GenoTaste Logo" class="logo-img-nav">
+        <div class="brand-text-group">
+          <span class="brand-name">GenoTaste</span>
+          <span class="brand-tagline-sm">NATURE • NURTURE • KNOWLEDGE</span>
+        </div>
       </a>
-      <ul class="nav-links">
-        <li><a href="../index.html#process">Our Process</a></li>
-        <li><a href="../genes/index.html">Gene Directory</a></li>
-        <li><a href="../traits/index.html">Wellness Traits</a></li>
-        <li><a href="../diets/index.html">Diet Matcher</a></li>
-        <li><a href="../tools/index.html" class="nav-cta-highlight">Interactive Tools</a></li>
-        <li><a href="../index.html#packages" class="btn btn-primary btn-nav">Book Consultation</a></li>
-      </ul>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html#process" class="nav-link">Our Process</a></li>
+          <li><a href="../genes/index.html" class="nav-link">Gene Library</a></li>
+          <li><a href="../traits/index.html" class="nav-link">Wellness Traits</a></li>
+          <li><a href="../diets/index.html" class="nav-link">Diet Matcher</a></li>
+          <li><a href="../tools/index.html" class="nav-link" style="color:var(--primary-gold); font-weight:700;">Interactive Tools</a></li>
+          <li><a href="../index.html#packages" class="nav-link">Packages</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.link/51ls4u" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Consultation</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
     </div>
-  </nav>
+  </header>
   <section class="pseo-header">
     <div class="container">
       <div class="breadcrumb-container">
