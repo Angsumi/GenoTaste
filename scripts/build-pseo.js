@@ -34,10 +34,10 @@ function renderHeader(title, description, canonicalUrl, depth = 1) {
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="${relPath}Logo_GenoTaste.png">
+  <meta property="og:image" content="${relPath}assets/images/Logo_GenoTaste.png">
 
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="${relPath}styles.css">
+  <link rel="stylesheet" href="${relPath}assets/css/styles.css">
 </head>
 <body>
   <!-- Scroll Progress -->
@@ -47,7 +47,7 @@ function renderHeader(title, description, canonicalUrl, depth = 1) {
   <header class="navbar" id="navbar">
     <div class="container navbar-container">
       <a href="${relPath}index.html" class="brand-logo">
-        <img src="${relPath}Logo_GenoTaste.png" alt="GenoTaste Logo" class="logo-img-nav">
+        <img src="${relPath}assets/images/Logo_GenoTaste.png" alt="GenoTaste Logo" class="logo-img-nav">
         <div class="brand-text-group">
           <span class="brand-name">GenoTaste</span>
           <span class="brand-tagline-sm">NATURE • NURTURE • KNOWLEDGE</span>
@@ -117,8 +117,8 @@ function renderFooter(depth = 1) {
   </footer>
 
   <!-- Scripts -->
-  <script src="${relPath}app.js"></script>
-  <script src="${relPath}tools.js"></script>
+  <script src="${relPath}assets/js/app.js"></script>
+  <script src="${relPath}assets/js/tools.js"></script>
 </body>
 </html>`;
 }

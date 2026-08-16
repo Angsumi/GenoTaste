@@ -2,7 +2,7 @@
   "name": "genotaste",
   "version": "1.0.0",
   "description": "GenoTaste Genomic Wellness Consulting & Programmatic SEO Engine",
-  "main": "app.js",
+  "main": "assets/js/app.js",
   "scripts": {
     "build:pseo": "node scripts/build-pseo.js",
     "start": "npx serve ."
