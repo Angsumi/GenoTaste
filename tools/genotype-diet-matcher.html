@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genomic Macronutrient & Diet Matcher Tool | GenoTaste Genomic Wellness</title>
+  <meta name="description" content="Calculate your baseline carb/fat/protein ratio and personalized nutrition guidelines based on FTO, APOE, PPARG, and ACTN3 variants.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://genotaste.com/tools/genotype-diet-matcher.html">
+  
+  <!-- OpenGraph / Social -->
+  <meta property="og:title" content="Genomic Macronutrient & Diet Matcher Tool">
+  <meta property="og:description" content="Calculate your baseline carb/fat/protein ratio and personalized nutrition guidelines based on FTO, APOE, PPARG, and ACTN3 variants.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../Logo_GenoTaste.png">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress-container"><div class="scroll-progress-bar" id="scrollProgress"></div></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../Logo_GenoTaste.png" alt="GenoTaste Logo" class="brand-logo-img">
+        <span class="brand-name">GenoTaste</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#process">Our Process</a></li>
+        <li><a href="../genes/index.html">Gene Directory</a></li>
+        <li><a href="../traits/index.html">Wellness Traits</a></li>
+        <li><a href="../diets/index.html">Diet Matcher</a></li>
+        <li><a href="../tools/index.html" class="nav-cta-highlight">Interactive Tools</a></li>
+        <li><a href="../index.html#packages" class="btn btn-primary btn-nav">Book Consultation</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <section class="pseo-header">
+    <div class="container">
+      <div class="breadcrumb-container">
+        <ul class="breadcrumbs">
+          <li><a href="../index.html">Home</a></li>
+          <li class="separator">/</li>
+          <li><a href="index.html">Tools</a></li>
+          <li class="separator">/</li>
+          <li>Genotype Diet Matcher</li>
+        </ul>
+      </div>
+      <span class="pseo-badge">Interactive Calculator</span>
+      <h1 class="pseo-title">Genomic Macronutrient & Diet Matcher Tool</h1>
+      <p class="pseo-summary">Input your genetic variants to calculate your custom macronutrient target breakdown and high-leverage habits.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="max-width:900px;">
+      <div class="tool-card-box">
+        <form id="genotypeMatcherForm" onsubmit="return false;">
+          <div class="tool-form-grid">
+            <div class="form-group">
+              <label>FTO Appetite & Satiety Variant</label>
+              <select id="ftoSelect" class="form-control">
+                <option value="TT">FTO T/T (Normal Satiety)</option>
+                <option value="AA" selected>FTO A/A or A/T (Elevated Appetite / High Ghrelin)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>APOE Saturated Fat Variant</label>
+              <select id="apoeSelect" class="form-control">
+                <option value="E3E3">APOE e3/e3 (Baseline Lipid Clearance)</option>
+                <option value="E4" selected>APOE e4 Carrier (Sat Fat Hyper-Responder)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>PPARG Insulin Sensitivity Variant</label>
+              <select id="ppargSelect" class="form-control">
+                <option value="ProPro">PPARG Pro/Pro (Standard Insulin Signaling)</option>
+                <option value="Ala" selected>PPARG Pro/Ala or Ala/Ala (Insulin Sensitive)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>ACTN3 Muscle Fiber Variant</label>
+              <select id="actn3Select" class="form-control">
+                <option value="RR" selected>ACTN3 R/R (Power & Sprint Fiber)</option>
+                <option value="XX">ACTN3 X/X (Endurance & High Fiber)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-results-box">
+            <div style="text-align:center; margin-bottom:1rem;">
+              <span id="matcherDietBadge" class="pseo-badge" style="margin-bottom:0.35rem;">Optimal Baseline</span>
+              <h3 id="matcherDietTitle" style="font-family:'Outfit',sans-serif; color:#FFF; font-size:1.35rem;">Calculated Pattern</h3>
+              <p id="matcherSummary" style="font-size:0.9rem; color:#94A3B8; margin-top:0.35rem;"></p>
+            </div>
+
+            <div class="macro-bar-container">
+              <div class="macro-segment segment-carbs" id="barCarbs" style="width:40%;"></div>
+              <div class="macro-segment segment-fats" id="barFats" style="width:30%;"></div>
+              <div class="macro-segment segment-protein" id="barProtein" style="width:30%;"></div>
+            </div>
+
+            <div class="macro-legend">
+              <div class="legend-item"><span class="dot-carbs"></span> Carbs: <strong id="pctCarbs" style="color:#FFF;">40%</strong></div>
+              <div class="legend-item"><span class="dot-fats"></span> Healthy Fats: <strong id="pctFats" style="color:#FFF;">30%</strong></div>
+              <div class="legend-item"><span class="dot-protein"></span> Protein: <strong id="pctProtein" style="color:#FFF;">30%</strong></div>
+            </div>
+
+            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.1);">
+              <h4 style="color:var(--primary-gold); font-size:0.95rem; margin-bottom:0.75rem;">Calculated Genotype Warnings & Guidelines:</h4>
+              <ul id="matcherWarnings" style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem; color:#E2E8F0;"></ul>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="pseo-card">
+        <h2 class="pseo-card-title">🥗 Explore Genotype Diet Matcher Guides</h2>
+        <p style="line-height:1.7; color:var(--navy-slate);">Learn more about how specific diets match your genomic profile:</p>
+        <ul class="pseo-list" style="margin-top:1rem;">
+          <li><a href="../diets/keto-apoe4.html" style="color:var(--primary-gold-dark); font-weight:600;">Is Keto Safe for APOE4 Carriers?</a></li>
+          <li><a href="../diets/intermittent-fasting-fto.html" style="color:var(--primary-gold-dark); font-weight:600;">Intermittent Fasting & FTO Satiety Variants</a></li>
+          <li><a href="../diets/mediterranean-diet-pparg.html" style="color:var(--primary-gold-dark); font-weight:600;">Mediterranean Diet & PPARG Insulin Sensitivity</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">GenoTaste</div>
+          <p style="margin-bottom:1.5rem; max-width:320px;">Translating complex genomic reports into actionable, personalized lifestyle, nutrition, and wellness blueprints.</p>
+          <p style="font-size:0.85rem; color:var(--primary-gold);">NATURE • NURTURE • KNOWLEDGE</p>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">Programmatic SEO</h4>
+          <ul class="footer-links">
+            <li><a href="../genes/index.html">Gene Directory (12+)</a></li>
+            <li><a href="../traits/index.html">Wellness Traits</a></li>
+            <li><a href="../diets/index.html">Diet & Genotype Matchers</a></li>
+            <li><a href="../tools/index.html">Interactive Tools Suite</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">Interactive Tools</h4>
+          <ul class="footer-links">
+            <li><a href="../tools/caffeine-calculator.html">Caffeine Cut-Off Calculator</a></li>
+            <li><a href="../tools/genotype-diet-matcher.html">Genotype Diet Matcher</a></li>
+            <li><a href="../tools/gene-decoder-hub.html">Gene Decoder Search Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">GenoTaste Consults</h4>
+          <p style="font-size:0.85rem; margin-bottom:1rem;">Have an 80-page DNA report from 23andMe or Ancestry? Let our genomic specialists decode it for you.</p>
+          <a href="../index.html#packages" class="btn btn-primary" style="width:100%; text-align:center;">View Consultation Packages</a>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p><strong>Non-Medical Disclaimer:</strong> GenoTaste provides educational genomic consulting and lifestyle prioritization. GenoTaste does not diagnose, treat, or cure medical conditions. Always consult a qualified medical physician before altering prescribed medications or therapeutic regimens.</p>
+        <p style="margin-top:0.75rem;">© 2026 GenoTaste Wellness Consulting. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../app.js"></script>
+  <script src="../tools.js"></script>
+</body>
+</html>

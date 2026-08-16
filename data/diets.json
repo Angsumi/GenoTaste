@@ -1,0 +1,107 @@
+[
+  {
+    "id": "keto-apoe4",
+    "title": "Is the Ketogenic Diet Safe for APOE4 Carriers?",
+    "category": "Diet & Genotype Matcher",
+    "tag": "Keto vs APOE4",
+    "summary": "An in-depth genomic evaluation of high-saturated-fat ketogenic diets for APOE e4/e4 and e3/e4 carriers, highlighting lipid risks and healthy low-sat-fat keto alternatives.",
+    "verdict": "High Saturated-Fat Keto is High Risk for APOE4. Mediterranean Low-Sat-Fat Keto or Balanced Carbohydrate is Recommended.",
+    "macroSplit": { "carbs": "10-15%", "fats": "65-70%", "protein": "20-25%" },
+    "keyInsights": [
+      "APOE4 allele carriers down-regulate hepatic LDL receptor activity when saturated fat intake is high, causing marked spikes in ApoB particle count.",
+      "Traditional keto diets heavy in butter, coconut oil, and bacon can accelerate atherogenic lipid profiles in APOE4 carriers.",
+      "If ketosis is desired for cognitive or metabolic reasons, fats must be derived exclusively from monounsaturated fats (extra virgin olive oil, avocado, macadamia nuts) and polyunsaturated omega-3s."
+    ],
+    "dietGuidelines": [
+      "Eliminate butter, heavy cream, lard, and unrefined coconut oil.",
+      "Base fat intake on extra virgin olive oil, wild salmon, chia seeds, and walnuts.",
+      "Monitor ApoB and LDL-P levels every 8-12 weeks when adjusting dietary fat composition."
+    ],
+    "associatedGenes": ["apoe", "pparg"],
+    "associatedTraits": ["saturated-fat-response", "carbohydrate-sensitivity"]
+  },
+  {
+    "id": "intermittent-fasting-fto",
+    "title": "Intermittent Fasting & FTO Satiety Variants",
+    "category": "Diet & Genotype Matcher",
+    "tag": "Fasting & Ghrelin",
+    "summary": "How to optimize time-restricted feeding (16/8 or 14/10) when carrying FTO hunger variants without triggering rebound overeating.",
+    "verdict": "Moderate 14/10 Time-Restricted Feeding with High-Protein Fast-Breaker Works Best.",
+    "macroSplit": { "carbs": "35%", "fats": "30%", "protein": "35%" },
+    "keyInsights": [
+      "FTO A allele carriers produce higher post-meal ghrelin and experience intense hunger spikes during extended fasting windows.",
+      "Extreme 24-48 hour fasts often lead to compensatory overeating of hyper-palatable energy-dense foods.",
+      "A 14-hour overnight fast (e.g. 7 PM to 9 AM) combined with a 35g+ protein breakfast stabilizes central satiety pathways effortlessly."
+    ],
+    "dietGuidelines": [
+      "Break fasts with high-protein, high-fiber meals rather than refined carbohydrates.",
+      "Maintain consistent daily eating windows to train ghrelin secretion timing.",
+      "Ensure adequate hydration and electrolyte intake during fasting hours."
+    ],
+    "associatedGenes": ["fto", "pparg"],
+    "associatedTraits": ["carbohydrate-sensitivity", "saturated-fat-response"]
+  },
+  {
+    "id": "mediterranean-diet-pparg",
+    "title": "Mediterranean Diet & PPARG Insulin Sensitivity",
+    "category": "Diet & Genotype Matcher",
+    "tag": "Mediterranean & MUFA",
+    "summary": "Why the Mediterranean diet pattern is the gold-standard baseline for PPARG Pro12Ala carriers and cardiovascular longevity.",
+    "verdict": "Highly Recommended Baseline for All Genotypes, Especially PPARG & APOE4.",
+    "macroSplit": { "carbs": "45%", "fats": "35%", "protein": "20%" },
+    "keyInsights": [
+      "PPARG Ala allele carriers experience optimal insulin sensitivity and weight management when consuming oleic-acid-rich monounsaturated fats.",
+      "Polyphenol-rich extra virgin olive oil acts as a natural signaling molecule for anti-inflammatory transcription factors.",
+      "Fiber-dense legumes and intact whole grains provide sustained glycemic response."
+    ],
+    "dietGuidelines": [
+      "Use extra virgin olive oil as the primary added fat source for all meals.",
+      "Include at least 3 servings of wild oily fish (sardines, mackerel, salmon) per week.",
+      "Incorporate abundant legumes (lentils, chickpeas) and colorful Mediterranean vegetables."
+    ],
+    "associatedGenes": ["pparg", "apoe", "sod2"],
+    "associatedTraits": ["saturated-fat-response", "carbohydrate-sensitivity"]
+  },
+  {
+    "id": "high-protein-actn3",
+    "title": "High Protein & ACTN3 Power Genotypes",
+    "category": "Diet & Genotype Matcher",
+    "tag": "Protein & ACTN3 Muscle",
+    "summary": "Fueling muscle protein synthesis and recovery for ACTN3 R/R power genotypes vs X/X endurance genotypes.",
+    "verdict": "Targeted High Protein (1.8-2.2g/kg) with Strategic Carb Pacing.",
+    "macroSplit": { "carbs": "40%", "fats": "25%", "protein": "35%" },
+    "keyInsights": [
+      "ACTN3 R/R power genotypes undergo higher muscular mechanical strain and require consistent amino acid availability for myofibrillar repair.",
+      "X/X endurance genotypes benefit from increased post-exercise collagen peptide and Vitamin C intake to support tendinous adaptation.",
+      "Distributing protein intake evenly into 30-40g boluses every 3-4 hours optimizes muscle protein synthesis via mTOR signaling."
+    ],
+    "dietGuidelines": [
+      "Consume 30-40g high-quality protein within 60 minutes post-workout.",
+      "Supplement with 5g daily creatine monohydrate for ACTN3 R/R explosive phosphocreatine support.",
+      "Pair post-workout protein with complex carbs to replenish glycogen stores."
+    ],
+    "associatedGenes": ["actn3", "sod2"],
+    "associatedTraits": ["muscle-recovery"]
+  },
+  {
+    "id": "methyl-folate-mthfr",
+    "title": "Bioactive Methyl-Folate Nutrition for MTHFR Variants",
+    "category": "Diet & Genotype Matcher",
+    "tag": "Folate & Methylation Diet",
+    "summary": "Dietary strategies to support MTHFR C677T and A1298C variants through natural folates, choline, and riboflavin.",
+    "verdict": "Strict Natural Folate & Bioactive B-Complex Protocol.",
+    "macroSplit": { "carbs": "40%", "fats": "30%", "protein": "30%" },
+    "keyInsights": [
+      "Synthetic folic acid found in fortified white flour and low-quality supplements competes with natural folates for transport proteins.",
+      "Natural folates from spinach, romaine, avocado, and liver provide bioavailable tetrahydrofolates naturally.",
+      "Choline (egg yolks, liver) and betaine (beets, spinach) supply parallel methyl-donor pathways via BHMT enzyme."
+    ],
+    "dietGuidelines": [
+      "Eliminate foods fortified with synthetic folic acid.",
+      "Include 2 eggs daily or egg yolks for essential choline methyl-donor support.",
+      "Incorporate cooked beets, spinach, and dark leafy greens daily."
+    ],
+    "associatedGenes": ["mthfr", "fut2", "comt"],
+    "associatedTraits": ["b-vitamin-methylation"]
+  }
+]

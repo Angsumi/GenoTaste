@@ -1,0 +1,577 @@
+[
+  {
+    "id": "cyp1a2",
+    "symbol": "CYP1A2",
+    "name": "Cytochrome P450 1A2 (Caffeine Metabolism Gene)",
+    "category": "Sleep & Rhythms",
+    "tag": "Caffeine Clearance",
+    "summary": "CYP1A2 encodes the primary liver enzyme responsible for 95% of caffeine clearance. Variations determine whether you are a fast or slow caffeine metabolizer, directly impacting sleep architecture, cardiovascular stress, and exercise endurance timing.",
+    "biologicalMechanism": "The CYP1A2 enzyme oxidizes caffeine into paraxanthine, theobromine, and theophylline in the liver. The rs762551 variant determines enzymatic inducibility. Individuals carrying the A/A genotype produce high levels of the enzyme (*1F fast metabolizers), rapidly clearing caffeine from their circulation. Those with C/C or A/C genotypes produce significantly lower enzyme levels (*1F slow metabolizers), causing caffeine to linger in blood plasma with a half-life extending up to 8-10 hours.",
+    "variants": [
+      {
+        "genotype": "A/A (Fast Metabolizer)",
+        "frequency": "~45% of population",
+        "impact": "Rapid caffeine breakdown. Lower risk of caffeine-induced sleep disruption or elevated blood pressure from morning coffee.",
+        "action": "Can safely consume moderate caffeine prior to workouts; minimal late-day sleep interference."
+      },
+      {
+        "genotype": "A/C or C/C (Slow Metabolizer)",
+        "frequency": "~55% of population",
+        "impact": "Delayed caffeine clearance. Elevated risk of sleep latency, elevated evening heart rate, and caffeine-induced anxiety.",
+        "action": "Strict caffeine cutoff 10–12 hours before bedtime. Limit single doses to under 100mg."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Cruciferous vegetables (broccoli, Brussels sprouts, cabbage) contain glucosinolates that naturally induce CYP1A2 activity.",
+      "Avoid combining high caffeine doses with grapefruit juice or API10 inhibitor foods that further delay enzyme processing.",
+      "Switch to L-theanine paired green tea in the early afternoon if slow metabolizer status is present."
+    ],
+    "lifestyleActions": [
+      "Set a strict 12:00 PM caffeine curfew if you possess the slow metabolizer variant.",
+      "Monitor evening heart rate variability (HRV) on days with afternoon caffeine intake.",
+      "Use our interactive CYP1A2 Caffeine Cut-Off Calculator to estimate your exact bedtime caffeine concentration."
+    ],
+    "faqs": [
+      {
+        "question": "Can I speed up CYP1A2 caffeine metabolism naturally?",
+        "answer": "While genetics dictate baseline enzyme levels, eating cruciferous vegetables (broccoli, kale, cauliflower) and avoiding liver-inhibiting substances can support optimal enzyme expression."
+      },
+      {
+        "question": "Why does afternoon coffee keep me awake while my friend can drink espresso before bed?",
+        "answer": "This is entirely driven by the CYP1A2 rs762551 SNP. Fast metabolizers clear half of their caffeine in 2-4 hours, whereas slow metabolizers retain caffeine in their system for up to 10 hours."
+      }
+    ],
+    "relatedGenes": ["adora2a", "comt"],
+    "relatedTraits": ["caffeine-metabolism", "circadian-sleep"],
+    "relatedDiets": ["methyl-folate-mthfr"]
+  },
+  {
+    "id": "mthfr",
+    "symbol": "MTHFR",
+    "name": "Methylenetetrahydrofolate Reductase (B-Vitamin Methylation Gene)",
+    "category": "Fatigue & Energy",
+    "tag": "Methylation & Folate",
+    "summary": "MTHFR converts dietary folate into its active coenzyme form (L-methylfolate), critical for cellular methylation, DNA repair, neurotransmitter synthesis, and homocysteine conversion.",
+    "biologicalMechanism": "The MTHFR enzyme catalyzes the reduction of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate (5-MTHF). 5-MTHF donates a methyl group to convert toxic homocysteine into methionine. Common functional variants C677T and A1298C reduce enzymatic activity by 30% to 70%, leading to reduced methylation capacity and potential homocysteine accumulation if unmanaged.",
+    "variants": [
+      {
+        "genotype": "677 C/C (Wild Type)",
+        "frequency": "~45% of population",
+        "impact": "100% enzymatic efficiency. Normal conversion of folate into 5-MTHF.",
+        "action": "Maintain standard dietary folate intake from leafy greens and whole foods."
+      },
+      {
+        "genotype": "677 C/T (Heterozygous)",
+        "frequency": "~40% of population",
+        "impact": "~65% enzymatic efficiency. Mild reduction in methylation processing capacity.",
+        "action": "Prioritize natural folate sources (spinach, asparagus) over synthetic folic acid."
+      },
+      {
+        "genotype": "677 T/T (Homozygous Variant)",
+        "frequency": "~10-15% of population",
+        "impact": "~30% enzymatic efficiency. Significant reduction in folate conversion and methylation efficiency.",
+        "action": "Incorporate active bioavailable L-methylfolate (5-MTHF) and methylcobalamin (B12) under consulting guidance."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Eat abundant dark leafy greens (spinach, romaine, avocado, lentils) rich in natural folates.",
+      "Avoid foods fortified with synthetic folic acid, as unmetabolized folic acid can block folate receptors in MTHFR variant carriers.",
+      "Ensure adequate intake of riboflavin (Vitamin B2), which acts as an essential cofactor for MTHFR enzymatic stability."
+    ],
+    "lifestyleActions": [
+      "Test plasma homocysteine levels annually as part of routine preventive wellness.",
+      "Support phase II liver detoxification with choline and betaine (trimethylglycine).",
+      "Consult GenoTaste specialists to evaluate optimal bioavailable B-complex balances."
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between Folic Acid and Methylfolate?",
+        "answer": "Folic acid is a synthetic oxidized form of folate that must undergo multiple enzymatic conversions (including MTHFR) to become active. L-Methylfolate (5-MTHF) is already bioactive and bypasses MTHFR bottlenecks."
+      },
+      {
+        "question": "Does having an MTHFR mutation mean I have a disease?",
+        "answer": "No. MTHFR variants are common biological trait variations, not diseases. They simply highlight a specific nutritional requirement for bioactive folates and B-vitamins."
+      }
+    ],
+    "relatedGenes": ["fut2", "comt"],
+    "relatedTraits": ["b-vitamin-methylation", "circadian-sleep"],
+    "relatedDiets": ["methyl-folate-mthfr"]
+  },
+  {
+    "id": "apoe",
+    "symbol": "APOE",
+    "name": "Apolipoprotein E (Lipid Transport & Saturated Fat Gene)",
+    "category": "Body & Weight",
+    "tag": "Lipid & Fat Metabolism",
+    "summary": "APOE plays a primary role in cholesterol transport, lipid clearance, and neuro-vascular maintenance. Variant alleles (E2, E3, E4) dictate how your body responds to dietary saturated fats and cholesterol.",
+    "biologicalMechanism": "Apolipoprotein E mediates the binding, uptake, and catabolism of triglyceride-rich lipoprotein particles. The APOE gene has three major alleles: e2 (cys112/cys158), e3 (cys112/arg158), and e4 (arg112/arg158). Carriers of the E4 allele exhibit hyper-responsiveness to dietary saturated fats, which can lead to elevated LDL-C particle numbers and modified inflammatory signaling.",
+    "variants": [
+      {
+        "genotype": "APOE e3/e3 (Neutral Baseline)",
+        "frequency": "~60-70% of population",
+        "impact": "Standard lipid clearance and average response to dietary fats.",
+        "action": "Follow a balanced Mediterranean diet pattern rich in monounsaturated fats."
+      },
+      {
+        "genotype": "APOE e3/e4 or e4/e4 (Saturated Fat Hyper-Responder)",
+        "frequency": "~15-25% of population",
+        "impact": "High sensitivity to saturated fats; potential increase in LDL-C and small dense ApoB particles on keto or high-butter diets.",
+        "action": "Replace saturated fats (butter, coconut oil, fatty red meat) with olive oil, avocado, and omega-3 fatty acids."
+      },
+      {
+        "genotype": "APOE e2/e3 (Triglyceride Sensitive)",
+        "frequency": "~10-15% of population",
+        "impact": "Enhanced clearing of LDL, but increased susceptibility to elevated blood triglycerides if simple refined carbs are high.",
+        "action": "Focus on low-glycemic complex carbohydrates and fiber-rich legumes."
+      }
+    ],
+    "dietaryRecommendations": [
+      "For E4 carriers: Limit saturated fat intake to under 7-10% of total daily energy.",
+      "Emphasize extra virgin olive oil, wild-caught salmon, walnuts, and chia seeds for healthy lipid ratios.",
+      "Increase soluble fiber intake (oat beta-glucan, psyllium husk) to support bile acid clearance."
+    ],
+    "lifestyleActions": [
+      "Obtain an Advanced Lipid Panel (ApoB, NMR LipoProfile) rather than basic lipid panel alone.",
+      "Engage in regular aerobic endurance activity, which enhances lipid clearance in APOE4 carriers.",
+      "Utilize the GenoTaste Genotype-Diet Matcher tool to optimize your daily macro split."
+    ],
+    "faqs": [
+      {
+        "question": "Is the Keto diet suitable for APOE4 carriers?",
+        "answer": "Traditional high-saturated-fat ketogenic diets often spike ApoB and LDL-C significantly in APOE4 carriers. A Mediterranean-style low-saturated-fat approach is usually far superior biologically."
+      },
+      {
+        "question": "How do I know my APOE status?",
+        "answer": "APOE status is determined by testing two specific genomic locations (rs429358 and rs7412) in standard raw DNA data or genomic wellness panels."
+      }
+    ],
+    "relatedGenes": ["fto", "pparg"],
+    "relatedTraits": ["saturated-fat-response", "carbohydrate-sensitivity"],
+    "relatedDiets": ["keto-apoe4", "mediterranean-diet-pparg"]
+  },
+  {
+    "id": "actn3",
+    "symbol": "ACTN3",
+    "name": "Alpha-Actinin-3 (Sprint vs Endurance Muscle Gene)",
+    "category": "Fitness & Recovery",
+    "tag": "Muscle Performance",
+    "summary": "ACTN3 is known as the 'gene for speed'. It controls the expression of alpha-actinin-3 protein in fast-twitch glycolytic muscle fibers, influencing explosive power, strength output, and muscle damage recovery rates.",
+    "biologicalMechanism": "Alpha-actinin-3 is a structural protein localized to the Z-disc of fast-twitch muscle fibers. The R577X polymorphism (rs1815739) introduces a premature stop codon. The R allele produces functional ACTN3 protein responsible for high force generation, while the X allele produces zero ACTN3 protein, shifting muscle metabolism toward endurance efficiency.",
+    "variants": [
+      {
+        "genotype": "R/R (Power & Sprint Genotype)",
+        "frequency": "~30% of population",
+        "impact": "High fast-twitch fiber force generation. Exceptional capability for high-intensity sprint, power, and heavy resistance training.",
+        "action": "Incorporate explosive lifting, sprinting, and plyometrics; allow structural recovery time for tendons."
+      },
+      {
+        "genotype": "R/X (Hybrid Power/Endurance)",
+        "frequency": "~48% of population",
+        "impact": "Balanced expression of fast-twitch and slow-twitch muscular dynamics.",
+        "action": "Well suited for concurrent training (combination of strength and aerobic conditioning)."
+      },
+      {
+        "genotype": "X/X (Endurance & Recovery Genotype)",
+        "frequency": "~22% of population",
+        "impact": "Zero ACTN3 protein. Enhanced metabolic efficiency in slow-twitch fibers and lower muscle damage markers after long distance training.",
+        "action": "Optimize for endurance sports, higher repetition training, and steady-state cardiovascular work."
+      }
+    ],
+    "dietaryRecommendations": [
+      "X/X carriers benefit from higher post-exercise collagen and vitamin C intake for tendon/ligament support.",
+      "R/R carriers should ensure adequate creatine monohydrate supplementation to support rapid phosphocreatine resynthesis.",
+      "Maintain adequate protein pacing (0.4g/kg per meal) across the day for muscle protein synthesis."
+    ],
+    "lifestyleActions": [
+      "Structure workout volume and recovery days according to your muscle fiber profile.",
+      "R/R individuals need dedicated eccentric muscle recovery focus after heavy lifting sessions.",
+      "Use post-workout cold water immersion or compression intelligently based on workout intensity."
+    ],
+    "faqs": [
+      {
+        "question": "Can an X/X genotype person still build muscle?",
+        "answer": "Yes, absolutely! Muscle hypertrophy occurs through mechanical tension and volume regardless of ACTN3 genotype. However, X/X individuals may respond better to higher volume/rep ranges."
+      },
+      {
+        "question": "Does ACTN3 affect athletic injury risk?",
+        "answer": "Yes. Studies suggest X/X individuals may experience slightly higher muscle strain susceptibility during unaccustomed maximal power exertion without thorough warm-ups."
+      }
+    ],
+    "relatedGenes": ["sod2", "cyp1a2"],
+    "relatedTraits": ["muscle-recovery", "caffeine-metabolism"],
+    "relatedDiets": ["high-protein-actn3"]
+  },
+  {
+    "id": "fto",
+    "symbol": "FTO",
+    "name": "Fat Mass and Obesity-Associated Gene (Satiety & Appetite)",
+    "category": "Body & Weight",
+    "tag": "Satiety & Appetite Control",
+    "summary": "FTO influences energy homeostasis, appetite regulation, and central ghrelin sensitivity. Variants alter post-meal satiety signals and snacking impulses.",
+    "biologicalMechanism": "FTO acts as a nucleic acid demethylase in the hypothalamus, regulating ghrelin (the hunger hormone) expression and NPY/AgRP neuronal pathways. The rs9939609 A allele impairs post-prandial ghrelin suppression, causing individuals to feel hungry sooner after eating and display a higher preference for energy-dense, hyper-palatable foods.",
+    "variants": [
+      {
+        "genotype": "T/T (Standard Satiety Response)",
+        "frequency": "~35% of population",
+        "impact": "Normal post-meal ghrelin suppression and balanced hunger cues.",
+        "action": "Maintain routine meal timing and intuitive eating patterns."
+      },
+      {
+        "genotype": "A/T or A/A (Elevated Appetite Trait)",
+        "frequency": "~65% of population",
+        "impact": "Higher circulating ghrelin post-meal; reduced fullness cues and increased susceptibility to hedonic snacking.",
+        "action": "Prioritize high-satiety index foods (high protein, high fiber, high volume) to physically suppress hunger signals."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Aim for 30-40g of protein at breakfast to suppress central ghrelin spikes throughout the morning.",
+      "Incorporate 35g+ of daily dietary fiber (chia, flax, vegetables) to promote gastric distension and fullness.",
+      "Avoid drinking calorie-dense liquids that fail to register on hypothalamic satiety receptors."
+    ],
+    "lifestyleActions": [
+      "Practice structured meal cadence instead of leaving food out for continuous grazing.",
+      "Ensure 7.5-8.5 hours of quality sleep, as sleep deprivation amplifies FTO-driven ghrelin hunger signals by 2-3x.",
+      "Use our Genotype-Diet Matcher to evaluate intermittent fasting compatibility."
+    ],
+    "faqs": [
+      {
+        "question": "Is weight gain inevitable if I carry the FTO A risk allele?",
+        "answer": "No! Clinical research shows that regular physical activity and a high-protein, high-fiber diet completely nullify the genetic weight risk associated with the FTO A allele."
+      },
+      {
+        "question": "How does FTO affect fasting?",
+        "answer": "FTO A allele carriers often experience stronger ghrelin spikes during prolonged fasting windows. Shortened feeding windows or structured meals often work better than extreme multi-day fasts."
+      }
+    ],
+    "relatedGenes": ["pparg", "apoe"],
+    "relatedTraits": ["carbohydrate-sensitivity", "saturated-fat-response"],
+    "relatedDiets": ["intermittent-fasting-fto", "keto-apoe4"]
+  },
+  {
+    "id": "sod2",
+    "symbol": "SOD2",
+    "name": "Superoxide Dismutase 2 (Mitochondrial Antioxidant Gene)",
+    "category": "Appearance & Traits",
+    "tag": "Oxidative Defense",
+    "summary": "SOD2 encodes the primary antioxidant enzyme inside mitochondria, neutralizing damaging superoxide radicals generated during energy production and exercise.",
+    "biologicalMechanism": "SOD2 converts reactive superoxide radicals (O2-) into hydrogen peroxide (H2O2) within the mitochondrial matrix. The Val16Ala polymorphism (rs4880) affects enzyme import into the mitochondria. The Ala variant allows efficient import, whereas the Val variant impairs mitochondrial targeting by ~30-40%, leading to elevated intracellular oxidative stress during intense physical or environmental stress.",
+    "variants": [
+      {
+        "genotype": "Ala/Ala (High Mitochondrial Defense)",
+        "frequency": "~25% of population",
+        "impact": "Optimal SOD2 enzyme import and rapid neutralization of free radicals.",
+        "action": "Maintain balanced natural antioxidant intake from whole foods."
+      },
+      {
+        "genotype": "Val/Val or Val/Ala (Reduced Mitochondrial Defense)",
+        "frequency": "~75% of population",
+        "impact": "Impaired mitochondrial SOD2 import; higher oxidative stress markers and skin photo-aging susceptibility under UV/stress.",
+        "action": "Increase dietary antioxidant cofactors (manganese, zinc, polyphenols, sulforaphane) to support cellular buffering."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Consume manganese-rich foods (pecans, oats, dark chocolate, spinach) essential for SOD2 catalytic activity.",
+      "Include polyphenol-dense berries (wild blueberries, blackberries) and green tea catechins (EGCG).",
+      "Incorporate cruciferous sprout extracts rich in sulforaphane to stimulate Nrf2 phase II antioxidant enzymes."
+    ],
+    "lifestyleActions": [
+      "Use broad-spectrum daily sun protection and topical antioxidants (Vitamin C + E ferulic serum).",
+      "Avoid over-training without adequate active recovery days when oxidative stress is high.",
+      "Monitor systemic inflammation markers (hs-CRP, 8-OHdG) during high-stress periods."
+    ],
+    "faqs": [
+      {
+        "question": "Can antioxidant supplements replace a healthy diet for SOD2 Val carriers?",
+        "answer": "High-dose synthetic antioxidant pills can sometimes blunt beneficial exercise adaptations. Whole-food polyphenol sources and enzyme cofactors (manganese, zinc) are far superior."
+      },
+      {
+        "question": "How does SOD2 impact skin aging?",
+        "answer": "Mitochondrial ROS damage collagen structures and dermal fibroblasts. Supporting SOD2 with key antioxidants helps preserve skin elasticity and barrier resilience."
+      }
+    ],
+    "relatedGenes": ["actn3", "vdr"],
+    "relatedTraits": ["oxidative-stress-skin", "muscle-recovery"],
+    "relatedDiets": ["high-protein-actn3"]
+  },
+  {
+    "id": "fut2",
+    "symbol": "FUT2",
+    "name": "Fucosyltransferase 2 (Gut Secretor & B12 Absorption Gene)",
+    "category": "Preventive Wellness",
+    "tag": "Gut Microbiome & B12",
+    "summary": "FUT2 determines secretor status—whether blood group antigens are secreted into the gut mucosa, directly shaping microbiome diversity and Vitamin B12 transport.",
+    "biologicalMechanism": "FUT2 encodes an alpha-1,2-fucosyltransferase that synthesizes the H antigen in mucosal secretions. Secretors (FUT2 positive) provide fucosylated glycans that nourish beneficial Bifidobacteria strains in the gut lining. Non-secretors (rs601338 G/G) lack mucosal antigens, resulting in altered gut flora composition, lower intrinsic Bifidobacteria, and reduced intrinsic B12 absorption efficiency.",
+    "variants": [
+      {
+        "genotype": "Secretor (FUT2 Active)",
+        "frequency": "~80% of population",
+        "impact": "Abundant mucosal glycans; healthy Bifidobacteria colonization and standard B12 intestinal transport.",
+        "action": "Maintain prebiotic fiber intake to feed indigenous beneficial gut strains."
+      },
+      {
+        "genotype": "Non-Secretor (FUT2 Inactive rs601338 G/G)",
+        "frequency": "~20% of population",
+        "impact": "Absence of ABO blood group antigens in saliva and gut secretions; ~30% lower baseline Bifidobacteria and reduced B12 absorption capacity.",
+        "action": "Supplement with targeted Bifidobacterium probiotics and check serum Vitamin B12 / Methylmalonic acid (MMA)."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Non-secretors should prioritize fermented foods (kefir, sauerkraut, kimchi) to supply live beneficial bacteria.",
+      "Consume prebiotic galactooligosaccharides (GOS) and acacia fiber to support microbiome diversity.",
+      "Ensure bioavailable B12 (methylcobalamin/adenosylcobalamin) intake if serum levels drop below optimal ranges."
+    ],
+    "lifestyleActions": [
+      "Perform a GI-MAP or gut microbiome test if digestive irregularity occurs.",
+      "Avoid overuse of non-essential NSAIDs or antibiotics that disrupt the gut mucosal barrier.",
+      "Pair gut optimization with MTHFR methylation management for complete cellular energy balance."
+    ],
+    "faqs": [
+      {
+        "question": "What is a non-secretor?",
+        "answer": "A non-secretor lacks functional FUT2 enzyme activity, meaning their body does not secrete blood group antigens into body fluids like saliva or gut mucus. This shapes their intestinal ecosystem."
+      },
+      {
+        "question": "How does FUT2 relate to B12 deficiency?",
+        "answer": "Non-secretors often have lower expression of intrinsic factor co-receptors in the ileum, leading to reduced efficiency in absorbing dietary B12."
+      }
+    ],
+    "relatedGenes": ["mthfr", "lct"],
+    "relatedTraits": ["b-vitamin-methylation", "lactose-digestion"],
+    "relatedDiets": ["methyl-folate-mthfr"]
+  },
+  {
+    "id": "vdr",
+    "symbol": "VDR",
+    "name": "Vitamin D Receptor (Calcium & Immune Signaling Gene)",
+    "category": "Preventive Wellness",
+    "tag": "Vitamin D & Bone Density",
+    "summary": "VDR dictates how effectively cells bind to active Vitamin D (calcitriol), regulating bone mineral density, immune cell modulation, and systemic calcium balance.",
+    "biologicalMechanism": "The Vitamin D Receptor (VDR) is a nuclear hormone receptor. Polymorphisms like TaqI (rs731236), BsmI (rs1544410), and FokI (rs2228570) alter receptor messenger RNA stability and tertiary binding affinity. Variations can reduce cellular Vitamin D transcriptional signaling despite adequate sunlight or oral Vitamin D intake.",
+    "variants": [
+      {
+        "genotype": "FokI F/F (High Binding Affinity)",
+        "frequency": "~38% of population",
+        "impact": "Efficient Vitamin D receptor activation and optimal downstream gene transcription.",
+        "action": "Maintain standard sun exposure and baseline maintenance Vitamin D3 intake."
+      },
+      {
+        "genotype": "FokI f/f or TaqI t/t (Reduced Binding Efficiency)",
+        "frequency": "~25% of population",
+        "impact": "Lower receptor binding affinity; higher requirement for circulating 25-hydroxyvitamin D to achieve full cellular stimulation.",
+        "action": "Target higher serum 25(OH)D levels (50-70 ng/mL) and pair D3 with Vitamin K2 (MK-7) and magnesium."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Always take Vitamin D3 supplements with a fat-containing meal for maximum intestinal micelle absorption.",
+      "Combine Vitamin D3 with Vitamin K2 (MK-7) to direct calcium into bone matrix rather than soft tissue arterial walls.",
+      "Ensure sufficient dietary magnesium (pumpkin seeds, dark leafy greens), an essential cofactor for Vitamin D activation enzymes."
+    ],
+    "lifestyleActions": [
+      "Test serum 25-hydroxyvitamin D levels bi-annually (end of summer and end of winter).",
+      "Get safe, direct morning sunlight exposure on arms and legs for 15-20 minutes daily.",
+      "Perform weight-bearing exercise to synergize with VDR signaling for bone mineral density."
+    ],
+    "faqs": [
+      {
+        "question": "Why are my Vitamin D levels low even though I take a supplement every day?",
+        "answer": "VDR gene variants can lower receptor binding affinity, while liver/kidney conversion enzymes or poor fat absorption can hinder utilization. Pairing D3 with K2 and healthy fats makes a major difference."
+      },
+      {
+        "question": "What is the optimal serum Vitamin D target for wellness?",
+        "answer": "Most functional genomics literature recommends maintaining blood 25(OH)D levels between 50 and 70 ng/mL for optimal VDR gene expression."
+      }
+    ],
+    "relatedGenes": ["sod2", "fut2"],
+    "relatedTraits": ["b-vitamin-methylation", "oxidative-stress-skin"],
+    "relatedDiets": ["mediterranean-diet-pparg"]
+  },
+  {
+    "id": "comt",
+    "symbol": "COMT",
+    "name": "Catechol-O-Methyltransferase (Dopamine & Stress Response Gene)",
+    "category": "Fatigue & Energy",
+    "tag": "Neurotransmitters & Stress",
+    "summary": "COMT breaks down catecholamines (dopamine, epinephrine, norepinephrine) in the prefrontal cortex. Val158Met variants dictate your cognitive focus style ('Warrior' vs 'Explorer').",
+    "biologicalMechanism": "COMT transfers a methyl group from S-adenosylmethionine (SAMe) to catechol neurotransmitters. The Val158Met (rs4680) polymorphism causes a 3- to 4-fold difference in enzymatic activity due to thermostability differences. Met/Met carriers ('Explorers') have 3-4x lower COMT activity, resulting in high baseline dopamine, intense focus, but slower recovery from acute stress. Val/Val carriers ('Warriors') clear dopamine rapidly, thriving under high stress but requiring extra stimulation for focus.",
+    "variants": [
+      {
+        "genotype": "Val/Val ('Warrior' High Activity)",
+        "frequency": "~25% of population",
+        "impact": "Fast dopamine breakdown. High stress resilience under pressure; may require higher novelty to maintain focus.",
+        "action": "Utilize gentle focus support; green tea polyphenols and structured task goals."
+      },
+      {
+        "genotype": "Val/Met (Balanced Activity)",
+        "frequency": "~50% of population",
+        "impact": "Intermediate dopamine clearance; balanced focus and stress resilience.",
+        "action": "Maintain steady lifestyle routines and balanced caffeine intake."
+      },
+      {
+        "genotype": "Met/Met ('Explorer' Low Activity)",
+        "frequency": "~25% of population",
+        "impact": "Slow dopamine breakdown. Exceptional detailed focus and memory under calm conditions; prone to over-stimulation or anxiety under intense caffeine/stress.",
+        "action": "Avoid excessive caffeine or high-stimulant pre-workouts. Incorporate calming adaptogens like L-theanine and magnesium glycinate."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Met/Met carriers should avoid high doses of methyl-donors or catechol-stimulating herbs that cause neurotransmitter backlog.",
+      "Val/Val carriers benefit from protein-rich foods containing tyrosine to supply baseline dopamine synthesis.",
+      "Ensure adequate SAMe precursors (methionine, magnesium, B6) for smooth COMT enzymatic methylation."
+    ],
+    "lifestyleActions": [
+      "Structure work environments to match your COMT focus profile (calm/focused vs dynamic/high-pressure).",
+      "Practice daily evening down-regulation routines (breathwork, sauna, meditation).",
+      "Pair COMT insights with your CYP1A2 caffeine clearance score in GenoTaste tools."
+    ],
+    "faqs": [
+      {
+        "question": "What is the COMT 'Warrior vs Explorer' model?",
+        "answer": "'Warriors' (Val/Val) clear stress hormones quickly and excel under chaos. 'Explorers' (Met/Met) hold high dopamine, enjoying high complex processing in quiet environments but feeling easily overwhelmed by excess caffeine or noise."
+      },
+      {
+        "question": "How does COMT interact with MTHFR?",
+        "answer": "COMT requires SAMe (produced by the methylation cycle) to function. If MTHFR methylation is impaired, COMT activity can slow down secondarily, affecting neurotransmitter balance."
+      }
+    ],
+    "relatedGenes": ["cyp1a2", "mthfr", "adora2a"],
+    "relatedTraits": ["circadian-sleep", "caffeine-metabolism"],
+    "relatedDiets": ["methyl-folate-mthfr"]
+  },
+  {
+    "id": "lct",
+    "symbol": "LCT",
+    "name": "Lactase Gene (Adult Lactose Persistence & Tolerance)",
+    "category": "Body & Weight",
+    "tag": "Dairy & Digestive Tolerance",
+    "summary": "LCT dictates whether lactase enzyme production continues into adulthood (lactase persistence) or declines after childhood, governing dairy sugar digestion.",
+    "biologicalMechanism": "Lactase hydrolyzes lactose into glucose and galactose in the small intestine. Adult expression is regulated by a regulatory region in the adjacent MCM6 gene (C/T-13910, rs4988235). The T allele confers persistent adult lactase synthesis, while the C/C genotype leads to natural down-regulation of lactase, causing undigested lactose to ferment in the colon.",
+    "variants": [
+      {
+        "genotype": "T/T or C/T (Lactase Persistent)",
+        "frequency": "~35% of global population (higher in Northern European ancestry)",
+        "impact": "Sustained adult lactase enzyme expression; comfortable digestion of milk, yogurt, and fresh dairy.",
+        "action": "Can include high-quality dairy foods as a source of calcium and protein if desired."
+      },
+      {
+        "genotype": "C/C (Lactase Non-Persistent / Lactose Intolerant)",
+        "frequency": "~65% of global population",
+        "impact": "Natural decline in adult lactase production; consumption of fresh milk causes gut bloating, gas, or osmotic distress.",
+        "action": "Choose plant-based milks (almond, oat), fermented lactose-free dairy (aged cheddar, kefir), or use oral lactase enzymes."
+      }
+    ],
+    "dietaryRecommendations": [
+      "C/C individuals can safely enjoy hard aged cheeses (parmesan, Swiss) as lactose is naturally converted to lactic acid during aging.",
+      "Incorporate plant-based calcium sources (tahini, canned sardines with bones, fortified leafy greens).",
+      "Pair dairy alternatives with Vitamin D3 and K2 to ensure calcium utilization."
+    ],
+    "lifestyleActions": [
+      "Distinguish between true milk protein allergy (casein/whey IgE) and lactase enzyme insufficiency (LCT genotype).",
+      "Use our Genotype-Diet Matcher tool to align your gut profile with dairy choices."
+    ],
+    "faqs": [
+      {
+        "question": "Can lactase non-persistent (C/C) people ever tolerate dairy?",
+        "answer": "Yes! Fermented dairy products like genuine kefir, yogurt, and aged cheeses contain live bacteria that produce their own lactase, making them very well tolerated by most C/C carriers."
+      },
+      {
+        "question": "Is lactose intolerance a genetic disease?",
+        "answer": "No! Lactase non-persistence (C/C) is actually the wild-type ancestral human condition. Lactase persistence evolved relatively recently alongside dairy farming ancestral populations."
+      }
+    ],
+    "relatedGenes": ["fut2", "apoe"],
+    "relatedTraits": ["lactose-digestion", "saturated-fat-response"],
+    "relatedDiets": ["mediterranean-diet-pparg"]
+  },
+  {
+    "id": "pparg",
+    "symbol": "PPARG",
+    "name": "Peroxisome Proliferator-Activated Receptor Gamma (Fat Storage & Insulin Sensitivity)",
+    "category": "Body & Weight",
+    "tag": "Insulin & Adipose Function",
+    "summary": "PPARG regulates adipocyte differentiation, fat storage architecture, and peripheral insulin sensitivity. Pro12Ala variants modify carbohydrate vs fat oxidation efficiency.",
+    "biologicalMechanism": "PPARG is a nuclear receptor transcription factor controlling lipid uptake and adipogenesis. The Pro12Ala (rs1801282) variant involves a C-to-G substitution. The Ala allele reduces PPARG binding affinity, conferring enhanced insulin sensitivity, lower systemic fasting insulin, and protection against weight gain when dietary monounsaturated fats are abundant.",
+    "variants": [
+      {
+        "genotype": "Pro/Pro (Wild Type)",
+        "frequency": "~75% of population",
+        "impact": "Standard fat cell differentiation; higher susceptibility to weight gain on combined high-fat + high-refined-carbohydrate intake.",
+        "action": "Avoid combining high saturated fat with high glycemic carbohydrates in single meals."
+      },
+      {
+        "genotype": "Pro/Ala or Ala/Ala (Insulin-Sensitive Variant)",
+        "frequency": "~25% of population",
+        "impact": "Superior insulin sensitivity and enhanced metabolic flexibility when following a Mediterranean diet pattern rich in MUFAs (monounsaturated fatty acids).",
+        "action": "Thrive on Mediterranean dietary patterns emphasizing extra virgin olive oil, nuts, and high-fiber legumes."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Emphasize oleic acid (extra virgin olive oil, avocados, macadamia nuts) to trigger positive PPARG signaling.",
+      "Limit refined seed oils and trans-fats that trigger inflammatory PPARG co-activators.",
+      "Pair carbohydrate sources with high fiber and vinegar to flatten post-meal insulin waves."
+    ],
+    "lifestyleActions": [
+      "Incorporate post-meal 10-minute walks to enhance GLUT4 translocation independently of insulin.",
+      "Utilize continuous glucose monitoring (CGM) or track fasting insulin to evaluate personal metabolic health.",
+      "Use our Genotype-Diet Matcher tool to verify your optimal carbohydrate threshold."
+    ],
+    "faqs": [
+      {
+        "question": "How does PPARG affect fat storage?",
+        "answer": "PPARG determines where and how fat is stored. Ala allele carriers store fat more safely in subcutaneous tissue rather than visceral abdominal tissue surrounding internal organs."
+      },
+      {
+        "question": "What is the best diet for PPARG Pro/Pro carriers?",
+        "answer": "Pro/Pro carriers perform best on a diet with controlled glycemic load, moderate healthy fats, and high fiber, avoiding hyper-palatable processed food combinations."
+      }
+    ],
+    "relatedGenes": ["fto", "apoe"],
+    "relatedTraits": ["carbohydrate-sensitivity", "saturated-fat-response"],
+    "relatedDiets": ["mediterranean-diet-pparg", "intermittent-fasting-fto"]
+  },
+  {
+    "id": "adora2a",
+    "symbol": "ADORA2A",
+    "name": "Adenosine A2A Receptor (Caffeine-Induced Sleep Disturbance & Anxiety)",
+    "category": "Sleep & Rhythms",
+    "tag": "Adenosine & Sleep Depth",
+    "summary": "ADORA2A encodes the brain adenosine receptor targeted by caffeine. Variants dictate whether caffeine triggers heightened state anxiety or deep sleep architecture disruption.",
+    "biologicalMechanism": "Caffeine acts as a competitive antagonist at adenosine A2A receptors in the basal ganglia and cortex, blocking the somnogens that signal sleep pressure. The rs5751876 T/T genotype causes heightened ADORA2A receptor expression, making individuals hyper-sensitive to caffeine-induced awakenings, reduced slow-wave (N3) deep sleep, and panic/jitteriness even when liver CYP1A2 clearance speed is normal.",
+    "variants": [
+      {
+        "genotype": "C/C or C/T (Low Anxiety Sensitivity)",
+        "frequency": "~40% of population",
+        "impact": "Standard adenosine receptor binding response to caffeine; lower propensity for caffeine-triggered jitters.",
+        "action": "Can consume standard coffee doses without elevated psychological anxiety."
+      },
+      {
+        "genotype": "T/T (High Sleep & Anxiety Sensitivity)",
+        "frequency": "~60% of population",
+        "impact": "High adenosine receptor sensitivity; caffeine easily disrupts deep N3 slow-wave sleep and causes cardiovascular jitteriness.",
+        "action": "Keep individual caffeine doses under 75-100mg and pair with L-theanine (100-200mg) to attenuate receptor over-excitation."
+      }
+    ],
+    "dietaryRecommendations": [
+      "Pair caffeine intake with L-theanine (found naturally in ceremonial green tea/matcha) to smooth out neurotransmitter response.",
+      "Switch to decaf or herbal teas (chamomile, passionflower) after mid-day.",
+      "Supplement with magnesium bisglycinate in the evening to support GABAergic relaxation."
+    ],
+    "lifestyleActions": [
+      "Track your sleep architecture with an Oura or Whoop ring to monitor slow-wave sleep variations relative to caffeine timing.",
+      "Utilize the GenoTaste Caffeine Calculator to evaluate your combined CYP1A2 + ADORA2A sleep impact score.",
+      "Avoid consuming energy drinks containing high synthetic caffeine anhydrous."
+    ],
+    "faqs": [
+      {
+        "question": "Can I be a fast liver caffeine metabolizer (CYP1A2) but still get caffeine jitters?",
+        "answer": "Yes! Liver metabolism (CYP1A2) controls how fast caffeine is cleared from your blood, but brain receptor sensitivity (ADORA2A) controls how strongly your brain responds to caffeine while it's in your system."
+      },
+      {
+        "question": "Why does matcha green tea feel calmer than black coffee?",
+        "answer": "Matcha naturally contains high concentrations of L-theanine, an amino acid that crosses the blood-brain barrier and antagonizes caffeine's excitatory effects on ADORA2A receptors."
+      }
+    ],
+    "relatedGenes": ["cyp1a2", "comt"],
+    "relatedTraits": ["caffeine-metabolism", "circadian-sleep"],
+    "relatedDiets": ["methyl-folate-mthfr"]
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "genotaste",
+  "version": "1.0.0",
+  "description": "GenoTaste Genomic Wellness Consulting & Programmatic SEO Engine",
+  "main": "app.js",
+  "scripts": {
+    "build:pseo": "node scripts/build-pseo.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "genomics",
+    "wellness",
+    "pseo",
+    "programmatic-seo",
+    "caffeine-calculator",
+    "genotype-diet-matcher"
+  ],
+  "author": "GenoTaste",
+  "license": "ISC"
+}

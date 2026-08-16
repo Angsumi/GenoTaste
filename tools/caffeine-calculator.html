@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYP1A2 Caffeine Cut-Off & Clearance Calculator | GenoTaste Genomic Wellness</title>
+  <meta name="description" content="Calculate your blood caffeine half-life, evening caffeine levels, and personalized last-cup cut-off time based on your CYP1A2 genotype.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://genotaste.com/tools/caffeine-calculator.html">
+  
+  <!-- OpenGraph / Social -->
+  <meta property="og:title" content="CYP1A2 Caffeine Cut-Off & Clearance Calculator">
+  <meta property="og:description" content="Calculate your blood caffeine half-life, evening caffeine levels, and personalized last-cup cut-off time based on your CYP1A2 genotype.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../Logo_GenoTaste.png">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress-container"><div class="scroll-progress-bar" id="scrollProgress"></div></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../Logo_GenoTaste.png" alt="GenoTaste Logo" class="brand-logo-img">
+        <span class="brand-name">GenoTaste</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#process">Our Process</a></li>
+        <li><a href="../genes/index.html">Gene Directory</a></li>
+        <li><a href="../traits/index.html">Wellness Traits</a></li>
+        <li><a href="../diets/index.html">Diet Matcher</a></li>
+        <li><a href="../tools/index.html" class="nav-cta-highlight">Interactive Tools</a></li>
+        <li><a href="../index.html#packages" class="btn btn-primary btn-nav">Book Consultation</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <section class="pseo-header">
+    <div class="container">
+      <div class="breadcrumb-container">
+        <ul class="breadcrumbs">
+          <li><a href="../index.html">Home</a></li>
+          <li class="separator">/</li>
+          <li><a href="index.html">Tools</a></li>
+          <li class="separator">/</li>
+          <li>Caffeine Calculator</li>
+        </ul>
+      </div>
+      <span class="pseo-badge">Interactive Calculator</span>
+      <h1 class="pseo-title">CYP1A2 Caffeine Cut-Off & Clearance Calculator</h1>
+      <p class="pseo-summary">Estimate your blood caffeine clearance curve, bedtime residual mg, and optimal last-cup cutoff time.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="max-width:900px;">
+      <div class="tool-card-box">
+        <form id="caffeineCalcForm" onsubmit="return false;">
+          <div class="tool-form-grid">
+            <div class="form-group">
+              <label>CYP1A2 Genotype Speed</label>
+              <select id="genotypeSelect" class="form-control">
+                <option value="fast">Fast Metabolizer (CYP1A2 *1A/*1A - A/A)</option>
+                <option value="intermediate" selected>Intermediate Metabolizer (CYP1A2 A/C)</option>
+                <option value="slow">Slow Metabolizer (CYP1A2 *1F - C/C)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Caffeine Dose (mg)</label>
+              <div class="range-container">
+                <input type="range" id="caffeineIntake" class="range-slider" min="30" max="400" value="150" step="10">
+                <span id="caffeineIntakeVal" class="range-val">150 mg</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Time of Caffeine Intake</label>
+              <select id="intakeTime" class="form-control">
+                <option value="7">7:00 AM</option>
+                <option value="8">8:00 AM</option>
+                <option value="9" selected>9:00 AM</option>
+                <option value="10">10:00 AM</option>
+                <option value="12">12:00 PM (Noon)</option>
+                <option value="14">2:00 PM</option>
+                <option value="16">4:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Target Bedtime</label>
+              <select id="sleepTime" class="form-control">
+                <option value="21.5">9:30 PM</option>
+                <option value="22">10:00 PM</option>
+                <option value="22.5" selected>10:30 PM</option>
+                <option value="23">11:00 PM</option>
+                <option value="24">12:00 AM (Midnight)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-results-box">
+            <div class="calc-results-grid">
+              <div>
+                <div class="calc-metric-label">Estimated Half-Life</div>
+                <div class="calc-metric-val" id="calcHalfLife">6.0 hrs</div>
+              </div>
+              <div>
+                <div class="calc-metric-label">Bedtime Residual</div>
+                <div class="calc-metric-val" id="calcRemaining">31.2 mg</div>
+              </div>
+              <div>
+                <div class="calc-metric-label">Recommended Cut-Off</div>
+                <div class="calc-metric-val" id="calcCutoff">11:30 AM</div>
+              </div>
+              <div>
+                <div class="calc-metric-label">Sleep Impact Score</div>
+                <div class="calc-metric-val" id="calcSleepScore">78/100</div>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+              <span id="calcSleepStatus" class="calc-status-badge status-warn">Mild Sleep Risk</span>
+              <p id="calcAdvice" style="font-size:0.95rem; color:#E2E8F0; line-height:1.6; margin:0; flex:1; min-width:280px;"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="pseo-card">
+        <h2 class="pseo-card-title">☕ Biological Mechanism Behind the Calculator</h2>
+        <p style="line-height:1.7; color:var(--navy-slate);">Caffeine clearance is mediated in the liver by Cytochrome P450 1A2 (CYP1A2). Fast metabolizers (*1A/*1A) break down 50% of ingested caffeine in 3 to 4 hours. Slow metabolizers (*1F C/C) retain active caffeine for up to 9 to 10 hours. Even small residual amounts (>20mg) at bedtime bind brain ADORA2A adenosine receptors, suppressing Stage N3 slow-wave deep sleep without necessarily causing insomnia.</p>
+        <p style="line-height:1.7; color:var(--navy-slate); margin-top:1rem;">Read our full <a href="../genes/cyp1a2.html" style="color:var(--primary-gold-dark); font-weight:600;">CYP1A2 Gene Guide</a> or explore <a href="../traits/caffeine-metabolism.html" style="color:var(--primary-gold-dark); font-weight:600;">Caffeine Clearance & Sleep Latency</a>.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">GenoTaste</div>
+          <p style="margin-bottom:1.5rem; max-width:320px;">Translating complex genomic reports into actionable, personalized lifestyle, nutrition, and wellness blueprints.</p>
+          <p style="font-size:0.85rem; color:var(--primary-gold);">NATURE • NURTURE • KNOWLEDGE</p>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">Programmatic SEO</h4>
+          <ul class="footer-links">
+            <li><a href="../genes/index.html">Gene Directory (12+)</a></li>
+            <li><a href="../traits/index.html">Wellness Traits</a></li>
+            <li><a href="../diets/index.html">Diet & Genotype Matchers</a></li>
+            <li><a href="../tools/index.html">Interactive Tools Suite</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">Interactive Tools</h4>
+          <ul class="footer-links">
+            <li><a href="../tools/caffeine-calculator.html">Caffeine Cut-Off Calculator</a></li>
+            <li><a href="../tools/genotype-diet-matcher.html">Genotype Diet Matcher</a></li>
+            <li><a href="../tools/gene-decoder-hub.html">Gene Decoder Search Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">GenoTaste Consults</h4>
+          <p style="font-size:0.85rem; margin-bottom:1rem;">Have an 80-page DNA report from 23andMe or Ancestry? Let our genomic specialists decode it for you.</p>
+          <a href="../index.html#packages" class="btn btn-primary" style="width:100%; text-align:center;">View Consultation Packages</a>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p><strong>Non-Medical Disclaimer:</strong> GenoTaste provides educational genomic consulting and lifestyle prioritization. GenoTaste does not diagnose, treat, or cure medical conditions. Always consult a qualified medical physician before altering prescribed medications or therapeutic regimens.</p>
+        <p style="margin-top:0.75rem;">© 2026 GenoTaste Wellness Consulting. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../app.js"></script>
+  <script src="../tools.js"></script>
+</body>
+</html>

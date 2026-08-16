@@ -1,0 +1,26 @@
+[
+  {
+    "id": "caffeine-calculator",
+    "name": "CYP1A2 Caffeine Clearance & Bedtime Cut-Off Calculator",
+    "tag": "Sleep & Rhythms",
+    "summary": "Calculate your blood caffeine half-life, remaining evening caffeine concentration (mg), and personalized last-cup cut-off time based on your CYP1A2 genotype.",
+    "icon": "☕",
+    "url": "/tools/caffeine-calculator.html"
+  },
+  {
+    "id": "genotype-diet-matcher",
+    "name": "Genomic Macronutrient & Diet Matcher Tool",
+    "tag": "Body & Weight",
+    "summary": "Input your key gene traits (FTO, PPARG, APOE4, LCT) to generate your optimal daily carb/fat/protein macro breakdown and dietary warning guide.",
+    "icon": "🥗",
+    "url": "/tools/genotype-diet-matcher.html"
+  },
+  {
+    "id": "gene-decoder-hub",
+    "name": "Interactive Gene & Trait Decoder Hub",
+    "tag": "Interactive Directory",
+    "summary": "Live searchable database across all wellness genes, traits, and genotype-matched diets with biological mechanism drawer previews and direct pSEO links.",
+    "icon": "🧬",
+    "url": "/tools/gene-decoder-hub.html"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "caffeine-metabolism",
+    "title": "Caffeine Clearance & Sleep Latency Guide",
+    "category": "Sleep & Rhythms",
+    "tag": "Caffeine & Adenosine",
+    "summary": "Understand how your hepatic CYP1A2 enzymes and central ADORA2A adenosine receptors dictate coffee half-life, afternoon energy crashes, and slow-wave sleep depth.",
+    "keyTakeaways": [
+      "Fast metabolizers (CYP1A2 A/A) clear caffeine in 2-4 hours, while slow metabolizers (C/C) retain active caffeine for 8-10+ hours.",
+      "ADORA2A receptor sensitivity dictates whether caffeine triggers anxiety or jitters even if clearance rate is high.",
+      "Late caffeine intake impairs restorative Stage N3 slow-wave sleep even if you fall asleep promptly."
+    ],
+    "biologicalOverview": "Caffeine clearance is handled primarily by the liver's Cytochrome P450 1A2 enzyme. Once in the systemic bloodstream, caffeine competes with endogenous adenosine to bind ADORA2A receptors in the brain. For slow metabolizers, afternoon coffee leaves significant circulating caffeine at bedtime, blocking sleep pressure signals.",
+    "actionSteps": [
+      "Calculate your personalized last-cup cut-off time using the GenoTaste Caffeine Calculator.",
+      "Switch to L-theanine enriched green tea or decaf after 12:00 PM if carrying slow clearance variants.",
+      "Monitor resting heart rate (RHR) and sleep latency when experimenting with caffeine timing."
+    ],
+    "associatedGenes": ["cyp1a2", "adora2a", "comt"]
+  },
+  {
+    "id": "b-vitamin-methylation",
+    "title": "Cellular Methylation & B-Vitamin Optimization",
+    "category": "Fatigue & Energy",
+    "tag": "Methylation & Homocysteine",
+    "summary": "Discover why synthetic folic acid can block receptors and how active methylfolate (5-MTHF) supports neurotransmitters, cellular energy, and cardiovascular health.",
+    "keyTakeaways": [
+      "MTHFR C677T and A1298C variants lower conversion efficiency of dietary folate into active L-methylfolate by up to 70%.",
+      "Accumulated un-methylated homocysteine can increase vascular stress and fatigue.",
+      "Bioavailable 5-MTHF and methyl-B12 bypass genetic rate-limiting enzyme bottlenecks."
+    ],
+    "biologicalOverview": "Methylation is a fundamental biochemical process where a methyl group (CH3) is transferred to DNA, proteins, and neurotransmitters. The MTHFR enzyme converts folate into 5-MTHF, which donates methyl groups to recycle homocysteine back to methionine. FUT2 and COMT work in synergy with methylation.",
+    "actionSteps": [
+      "Replace synthetic folic acid in supplements with bioactive L-5-Methyltetrahydrofolate.",
+      "Increase dietary folates from organic dark leafy greens (spinach, kale, asparagus).",
+      "Check annual plasma homocysteine levels with a health professional."
+    ],
+    "associatedGenes": ["mthfr", "fut2", "comt"]
+  },
+  {
+    "id": "saturated-fat-response",
+    "title": "Saturated Fat Sensitivity & Lipid Response",
+    "category": "Body & Weight",
+    "tag": "Lipids & Saturated Fat",
+    "summary": "Why universal keto or high-butter diets fail for certain genetic profiles. Learn how APOE4 and PPARG variants dictate saturated fat clearance.",
+    "keyTakeaways": [
+      "APOE4 carriers exhibit hyper-responsiveness to saturated fat, spiking ApoB and atherogenic LDL particles.",
+      "PPARG variants modify fat oxidation efficiency and adipose tissue insulin sensitivity.",
+      "Replacing saturated fat with monounsaturated fats (MUFAs) restores optimal lipid markers for high-risk profiles."
+    ],
+    "biologicalOverview": "Apolipoprotein E mediates lipolysis and clearance of triglyceride-rich chylomicron remnants. Saturated fatty acids down-regulate hepatic LDL receptor activity in APOE4 allele carriers, prolonging atherogenic particle residence time in circulation.",
+    "actionSteps": [
+      "Limit saturated fat to <7-10% of total daily calories if carrying APOE e4 alleles.",
+      "Focus on extra virgin olive oil, wild seafood, avocados, and soluble oat fiber.",
+      "Run an advanced NMR LipoProfile (ApoB particle count) instead of simple lipid panels."
+    ],
+    "associatedGenes": ["apoe", "pparg", "fto"]
+  },
+  {
+    "id": "muscle-recovery",
+    "title": "Muscle Fiber Dynamics & Exercise Recovery Speed",
+    "category": "Fitness & Recovery",
+    "tag": "Power vs Endurance & SOD2",
+    "summary": "Tailor your workout split, power vs endurance ratio, and recovery windows based on ACTN3 fast-twitch protein and SOD2 mitochondrial antioxidant defense.",
+    "keyTakeaways": [
+      "ACTN3 R/R genotype yields maximal fast-twitch power, while X/X genotype enhances slow-twitch endurance and fatigue resistance.",
+      "SOD2 Val variants experience higher exercise-induced mitochondrial oxidative stress requiring targeted antioxidant support.",
+      "Recovery pacing must match genetic collagen turnover and metabolic clearing capacity."
+    ],
+    "biologicalOverview": "Alpha-actinin-3 stabilizes fast-twitch muscle Z-discs for rapid force generation. During high-intensity exercise, mitochondrial respiration produces superoxide radicals. SOD2 converts these radicals; variants with lower import efficiency require longer inter-session recovery.",
+    "actionSteps": [
+      "Structure high-intensity sprint training for ACTN3 R/R, and higher volume endurance work for X/X profiles.",
+      "Incorporate targeted post-workout polyphenols (sour cherry, sulforaphane) for SOD2 Val carriers.",
+      "Maintain post-exercise protein distribution of 0.4g/kg body weight."
+    ],
+    "associatedGenes": ["actn3", "sod2", "cyp1a2"]
+  },
+  {
+    "id": "lactose-digestion",
+    "title": "Lactose Persistence & Gut Microbiome Balance",
+    "category": "Body & Weight",
+    "tag": "Dairy Sugar & Gut Microbiome",
+    "summary": "Differentiate between genetic lactase non-persistence (LCT C/C) and milk protein sensitivities, and learn how FUT2 shapes beneficial gut flora.",
+    "keyTakeaways": [
+      "LCT C/C genotype leads to natural adult down-regulation of small intestine lactase enzymes.",
+      "Fermented dairy (kefir, aged cheeses) contains bacterial lactase, rendering it highly digestible.",
+      "FUT2 non-secretors have lower baseline Bifidobacteria and require targeted probiotic support."
+    ],
+    "biologicalOverview": "Lactase breakdown occurs at the intestinal brush border. Uncleaved lactose passes into the colon, drawing water osmotic ally and fermenting into gas. FUT2 secretor status determines mucosal glycan availability for beneficial commensal bacteria.",
+    "actionSteps": [
+      "Choose naturally low-lactose aged cheeses (parmesan, cheddar) or fermented kefir if LCT C/C.",
+      "Supplement with Bifidobacterium probiotic strains if FUT2 non-secretor.",
+      "Use plant-based milks fortified with calcium and Vitamin D3/K2."
+    ],
+    "associatedGenes": ["lct", "fut2"]
+  },
+  {
+    "id": "oxidative-stress-skin",
+    "title": "Oxidative Defense & Dermal Photo-Aging",
+    "category": "Appearance & Traits",
+    "tag": "Skin Resiliency & Antioxidants",
+    "summary": "Protect skin collagen, elasticity, and dermal hydration by understanding SOD2 mitochondrial defense and cellular antioxidant pathways.",
+    "keyTakeaways": [
+      "Mitochondrial ROS generated by UV exposure and stress accelerate dermal collagen breakdown.",
+      "SOD2 and glutathione pathways determine your intrinsic cellular oxidative buffering capacity.",
+      "Topical and dietary polyphenol strategies provide targeted defense against photo-aging."
+    ],
+    "biologicalOverview": "Dermal matrix fibroblasts depend on mitochondrial SOD2 to neutralize superoxide radicals. Impaired enzyme import increases oxidative degradation of collagen and elastin fibers.",
+    "actionSteps": [
+      "Apply broad-spectrum daily SPF and topical C + E ferulic antioxidant serums.",
+      "Consume polyphenol-rich foods (berries, green tea, dark cocoa, cruciferous sprouts).",
+      "Avoid smoking and excessive refined sugars that induce dermal advanced glycation end-products (AGEs)."
+    ],
+    "associatedGenes": ["sod2", "vdr"]
+  },
+  {
+    "id": "circadian-sleep",
+    "title": "Adenosine Dynamics & Circadian Sleep Pacing",
+    "category": "Sleep & Rhythms",
+    "tag": "Neuro-Sleep Architecture",
+    "summary": "How COMT neurotransmitter clearing and ADORA2A adenosine receptor sensitivity shape evening sleep architecture and morning wakefulness.",
+    "keyTakeaways": [
+      "COMT Met/Met carriers retain higher evening dopamine and require active wind-down routines.",
+      "ADORA2A T/T carriers experience reduced Stage N3 deep sleep if stimulant intake occurs after mid-day.",
+      "Aligning light exposure and nutrient timing with genetic rhythm profiles optimizes restorative sleep."
+    ],
+    "biologicalOverview": "Sleep pressure builds through adenosine accumulation in the brain. Simultaneously, catecholamines are cleared by COMT. High adenosine receptor sensitivity paired with slow dopamine clearing creates sleep onset friction if caffeine or evening stress is present.",
+    "actionSteps": [
+      "Get 10-15 minutes of bright morning sunlight to anchor central circadian clock oscillations.",
+      "Incorporate evening magnesium bisglycinate and L-theanine.",
+      "Set strict digital blue-light boundaries 90 minutes before bedtime."
+    ],
+    "associatedGenes": ["adora2a", "comt", "cyp1a2"]
+  },
+  {
+    "id": "carbohydrate-sensitivity",
+    "title": "Carbohydrate Glycemic Response & Insulin Pacing",
+    "category": "Body & Weight",
+    "tag": "Carb Metabolism & Satiety",
+    "summary": "Understand how PPARG insulin receptor variants and FTO ghrelin signaling dictate carbohydrate tolerance and body composition.",
+    "keyTakeaways": [
+      "PPARG Pro/Ala carriers possess higher baseline insulin sensitivity and thrive on complex carbs paired with healthy fats.",
+      "FTO A allele carriers experience stronger central ghrelin hunger cues when eating refined high-glycemic carbohydrates.",
+      "Fiber and vinegar prior to carb meals reduce post-prandial glucose and insulin excursions."
+    ],
+    "biologicalOverview": "Peroxisome proliferator-activated receptor gamma regulates insulin-stimulated glucose uptake in fat and muscle tissue. FTO acts in the hypothalamus to regulate hunger signaling after carbohydrate ingestion.",
+    "actionSteps": [
+      "Prioritize intact whole grains, legumes, and high-fiber tubers over refined flours.",
+      "Include 30g+ protein with high-carb meals to stabilize post-prandial ghrelin levels.",
+      "Utilize light post-meal movement (10-minute walk) to clear circulating glucose."
+    ],
+    "associatedGenes": ["pparg", "fto", "apoe"]
+  }
+]

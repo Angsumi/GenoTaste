@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Gene & Trait Decoder Hub | GenoTaste Genomic Wellness</title>
+  <meta name="description" content="Live search and filter across all 12+ wellness genes, physiological trait guides, and genotype-matched diets.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://genotaste.com/tools/gene-decoder-hub.html">
+  
+  <!-- OpenGraph / Social -->
+  <meta property="og:title" content="Interactive Gene & Trait Decoder Hub">
+  <meta property="og:description" content="Live search and filter across all 12+ wellness genes, physiological trait guides, and genotype-matched diets.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../Logo_GenoTaste.png">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress-container"><div class="scroll-progress-bar" id="scrollProgress"></div></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../Logo_GenoTaste.png" alt="GenoTaste Logo" class="brand-logo-img">
+        <span class="brand-name">GenoTaste</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#process">Our Process</a></li>
+        <li><a href="../genes/index.html">Gene Directory</a></li>
+        <li><a href="../traits/index.html">Wellness Traits</a></li>
+        <li><a href="../diets/index.html">Diet Matcher</a></li>
+        <li><a href="../tools/index.html" class="nav-cta-highlight">Interactive Tools</a></li>
+        <li><a href="../index.html#packages" class="btn btn-primary btn-nav">Book Consultation</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <section class="pseo-header">
+    <div class="container">
+      <div class="breadcrumb-container">
+        <ul class="breadcrumbs">
+          <li><a href="../index.html">Home</a></li>
+          <li class="separator">/</li>
+          <li><a href="index.html">Tools</a></li>
+          <li class="separator">/</li>
+          <li>Decoder Hub</li>
+        </ul>
+      </div>
+      <span class="pseo-badge">Live Search Hub</span>
+      <h1 class="pseo-title">Interactive Gene & Trait Decoder Hub</h1>
+      <p class="pseo-summary">Search any gene symbol (CYP1A2, MTHFR, APOE, ACTN3), trait keyword, or diet strategy in real time.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <!-- Search & Filters -->
+      <div class="hub-search-bar">
+        <input type="text" id="hubSearchInput" class="hub-search-input" placeholder="🔍 Search by gene symbol (e.g. MTHFR), trait (caffeine, sleep, fat), or diet...">
+      </div>
+
+      <div class="hub-filter-pills">
+        <button class="hub-filter-btn active" data-category="all">All Topics</button>
+        <button class="hub-filter-btn" data-category="Sleep & Rhythms">Sleep & Rhythms</button>
+        <button class="hub-filter-btn" data-category="Fatigue & Energy">Fatigue & Energy</button>
+        <button class="hub-filter-btn" data-category="Body & Weight">Body & Weight</button>
+        <button class="hub-filter-btn" data-category="Fitness & Recovery">Fitness & Recovery</button>
+        <button class="hub-filter-btn" data-category="Appearance & Traits">Appearance & Skin</button>
+        <button class="hub-filter-btn" data-category="Preventive Wellness">Preventive Wellness</button>
+      </div>
+
+      <!-- Hub Cards Grid -->
+      <div class="hub-grid">
+        
+          <div class="hub-item-card" data-title="CYP1A2 Cytochrome P450 1A2 (Caffeine Metabolism Gene)" data-tags="Caffeine Clearance Sleep & Rhythms" data-category="Sleep & Rhythms">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">CYP1A2</div>
+              <div class="hub-item-name">Cytochrome P450 1A2 (Caffeine Metabolism Gene)</div>
+              <p class="hub-item-summary">CYP1A2 encodes the primary liver enzyme responsible for 95% of caffeine clearance. Variations determine whether you are a fast or slow caffeine metabolizer, directly impacting sleep architecture, cardiovascular stress, and exercise endurance timing.</p>
+            </div>
+            <a href="../genes/cyp1a2.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="MTHFR Methylenetetrahydrofolate Reductase (B-Vitamin Methylation Gene)" data-tags="Methylation & Folate Fatigue & Energy" data-category="Fatigue & Energy">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">MTHFR</div>
+              <div class="hub-item-name">Methylenetetrahydrofolate Reductase (B-Vitamin Methylation Gene)</div>
+              <p class="hub-item-summary">MTHFR converts dietary folate into its active coenzyme form (L-methylfolate), critical for cellular methylation, DNA repair, neurotransmitter synthesis, and homocysteine conversion.</p>
+            </div>
+            <a href="../genes/mthfr.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="APOE Apolipoprotein E (Lipid Transport & Saturated Fat Gene)" data-tags="Lipid & Fat Metabolism Body & Weight" data-category="Body & Weight">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">APOE</div>
+              <div class="hub-item-name">Apolipoprotein E (Lipid Transport & Saturated Fat Gene)</div>
+              <p class="hub-item-summary">APOE plays a primary role in cholesterol transport, lipid clearance, and neuro-vascular maintenance. Variant alleles (E2, E3, E4) dictate how your body responds to dietary saturated fats and cholesterol.</p>
+            </div>
+            <a href="../genes/apoe.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="ACTN3 Alpha-Actinin-3 (Sprint vs Endurance Muscle Gene)" data-tags="Muscle Performance Fitness & Recovery" data-category="Fitness & Recovery">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">ACTN3</div>
+              <div class="hub-item-name">Alpha-Actinin-3 (Sprint vs Endurance Muscle Gene)</div>
+              <p class="hub-item-summary">ACTN3 is known as the 'gene for speed'. It controls the expression of alpha-actinin-3 protein in fast-twitch glycolytic muscle fibers, influencing explosive power, strength output, and muscle damage recovery rates.</p>
+            </div>
+            <a href="../genes/actn3.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="FTO Fat Mass and Obesity-Associated Gene (Satiety & Appetite)" data-tags="Satiety & Appetite Control Body & Weight" data-category="Body & Weight">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">FTO</div>
+              <div class="hub-item-name">Fat Mass and Obesity-Associated Gene (Satiety & Appetite)</div>
+              <p class="hub-item-summary">FTO influences energy homeostasis, appetite regulation, and central ghrelin sensitivity. Variants alter post-meal satiety signals and snacking impulses.</p>
+            </div>
+            <a href="../genes/fto.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="SOD2 Superoxide Dismutase 2 (Mitochondrial Antioxidant Gene)" data-tags="Oxidative Defense Appearance & Traits" data-category="Appearance & Traits">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">SOD2</div>
+              <div class="hub-item-name">Superoxide Dismutase 2 (Mitochondrial Antioxidant Gene)</div>
+              <p class="hub-item-summary">SOD2 encodes the primary antioxidant enzyme inside mitochondria, neutralizing damaging superoxide radicals generated during energy production and exercise.</p>
+            </div>
+            <a href="../genes/sod2.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="FUT2 Fucosyltransferase 2 (Gut Secretor & B12 Absorption Gene)" data-tags="Gut Microbiome & B12 Preventive Wellness" data-category="Preventive Wellness">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">FUT2</div>
+              <div class="hub-item-name">Fucosyltransferase 2 (Gut Secretor & B12 Absorption Gene)</div>
+              <p class="hub-item-summary">FUT2 determines secretor status—whether blood group antigens are secreted into the gut mucosa, directly shaping microbiome diversity and Vitamin B12 transport.</p>
+            </div>
+            <a href="../genes/fut2.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="VDR Vitamin D Receptor (Calcium & Immune Signaling Gene)" data-tags="Vitamin D & Bone Density Preventive Wellness" data-category="Preventive Wellness">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">VDR</div>
+              <div class="hub-item-name">Vitamin D Receptor (Calcium & Immune Signaling Gene)</div>
+              <p class="hub-item-summary">VDR dictates how effectively cells bind to active Vitamin D (calcitriol), regulating bone mineral density, immune cell modulation, and systemic calcium balance.</p>
+            </div>
+            <a href="../genes/vdr.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="COMT Catechol-O-Methyltransferase (Dopamine & Stress Response Gene)" data-tags="Neurotransmitters & Stress Fatigue & Energy" data-category="Fatigue & Energy">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">COMT</div>
+              <div class="hub-item-name">Catechol-O-Methyltransferase (Dopamine & Stress Response Gene)</div>
+              <p class="hub-item-summary">COMT breaks down catecholamines (dopamine, epinephrine, norepinephrine) in the prefrontal cortex. Val158Met variants dictate your cognitive focus style ('Warrior' vs 'Explorer').</p>
+            </div>
+            <a href="../genes/comt.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="LCT Lactase Gene (Adult Lactose Persistence & Tolerance)" data-tags="Dairy & Digestive Tolerance Body & Weight" data-category="Body & Weight">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">LCT</div>
+              <div class="hub-item-name">Lactase Gene (Adult Lactose Persistence & Tolerance)</div>
+              <p class="hub-item-summary">LCT dictates whether lactase enzyme production continues into adulthood (lactase persistence) or declines after childhood, governing dairy sugar digestion.</p>
+            </div>
+            <a href="../genes/lct.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="PPARG Peroxisome Proliferator-Activated Receptor Gamma (Fat Storage & Insulin Sensitivity)" data-tags="Insulin & Adipose Function Body & Weight" data-category="Body & Weight">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">PPARG</div>
+              <div class="hub-item-name">Peroxisome Proliferator-Activated Receptor Gamma (Fat Storage & Insulin Sensitivity)</div>
+              <p class="hub-item-summary">PPARG regulates adipocyte differentiation, fat storage architecture, and peripheral insulin sensitivity. Pro12Ala variants modify carbohydrate vs fat oxidation efficiency.</p>
+            </div>
+            <a href="../genes/pparg.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="ADORA2A Adenosine A2A Receptor (Caffeine-Induced Sleep Disturbance & Anxiety)" data-tags="Adenosine & Sleep Depth Sleep & Rhythms" data-category="Sleep & Rhythms">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Gene Guide</span>
+              <div class="hub-item-symbol">ADORA2A</div>
+              <div class="hub-item-name">Adenosine A2A Receptor (Caffeine-Induced Sleep Disturbance & Anxiety)</div>
+              <p class="hub-item-summary">ADORA2A encodes the brain adenosine receptor targeted by caffeine. Variants dictate whether caffeine triggers heightened state anxiety or deep sleep architecture disruption.</p>
+            </div>
+            <a href="../genes/adora2a.html" class="hub-item-link">Explore Gene Guide →</a>
+          </div>
+        
+
+        
+          <div class="hub-item-card" data-title="Caffeine Clearance & Sleep Latency Guide Caffeine & Adenosine" data-tags="Understand how your hepatic CYP1A2 enzymes and central ADORA2A adenosine receptors dictate coffee half-life, afternoon energy crashes, and slow-wave sleep depth." data-category="Sleep & Rhythms">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Caffeine & Adenosine</div>
+              <div class="hub-item-name">Caffeine Clearance & Sleep Latency Guide</div>
+              <p class="hub-item-summary">Understand how your hepatic CYP1A2 enzymes and central ADORA2A adenosine receptors dictate coffee half-life, afternoon energy crashes, and slow-wave sleep depth.</p>
+            </div>
+            <a href="../traits/caffeine-metabolism.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="Cellular Methylation & B-Vitamin Optimization Methylation & Homocysteine" data-tags="Discover why synthetic folic acid can block receptors and how active methylfolate (5-MTHF) supports neurotransmitters, cellular energy, and cardiovascular health." data-category="Fatigue & Energy">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Methylation & Homocysteine</div>
+              <div class="hub-item-name">Cellular Methylation & B-Vitamin Optimization</div>
+              <p class="hub-item-summary">Discover why synthetic folic acid can block receptors and how active methylfolate (5-MTHF) supports neurotransmitters, cellular energy, and cardiovascular health.</p>
+            </div>
+            <a href="../traits/b-vitamin-methylation.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="Saturated Fat Sensitivity & Lipid Response Lipids & Saturated Fat" data-tags="Why universal keto or high-butter diets fail for certain genetic profiles. Learn how APOE4 and PPARG variants dictate saturated fat clearance." data-category="Body & Weight">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Lipids & Saturated Fat</div>
+              <div class="hub-item-name">Saturated Fat Sensitivity & Lipid Response</div>
+              <p class="hub-item-summary">Why universal keto or high-butter diets fail for certain genetic profiles. Learn how APOE4 and PPARG variants dictate saturated fat clearance.</p>
+            </div>
+            <a href="../traits/saturated-fat-response.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="Muscle Fiber Dynamics & Exercise Recovery Speed Power vs Endurance & SOD2" data-tags="Tailor your workout split, power vs endurance ratio, and recovery windows based on ACTN3 fast-twitch protein and SOD2 mitochondrial antioxidant defense." data-category="Fitness & Recovery">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Power vs Endurance & SOD2</div>
+              <div class="hub-item-name">Muscle Fiber Dynamics & Exercise Recovery Speed</div>
+              <p class="hub-item-summary">Tailor your workout split, power vs endurance ratio, and recovery windows based on ACTN3 fast-twitch protein and SOD2 mitochondrial antioxidant defense.</p>
+            </div>
+            <a href="../traits/muscle-recovery.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="Lactose Persistence & Gut Microbiome Balance Dairy Sugar & Gut Microbiome" data-tags="Differentiate between genetic lactase non-persistence (LCT C/C) and milk protein sensitivities, and learn how FUT2 shapes beneficial gut flora." data-category="Body & Weight">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Dairy Sugar & Gut Microbiome</div>
+              <div class="hub-item-name">Lactose Persistence & Gut Microbiome Balance</div>
+              <p class="hub-item-summary">Differentiate between genetic lactase non-persistence (LCT C/C) and milk protein sensitivities, and learn how FUT2 shapes beneficial gut flora.</p>
+            </div>
+            <a href="../traits/lactose-digestion.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="Oxidative Defense & Dermal Photo-Aging Skin Resiliency & Antioxidants" data-tags="Protect skin collagen, elasticity, and dermal hydration by understanding SOD2 mitochondrial defense and cellular antioxidant pathways." data-category="Appearance & Traits">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Skin Resiliency & Antioxidants</div>
+              <div class="hub-item-name">Oxidative Defense & Dermal Photo-Aging</div>
+              <p class="hub-item-summary">Protect skin collagen, elasticity, and dermal hydration by understanding SOD2 mitochondrial defense and cellular antioxidant pathways.</p>
+            </div>
+            <a href="../traits/oxidative-stress-skin.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="Adenosine Dynamics & Circadian Sleep Pacing Neuro-Sleep Architecture" data-tags="How COMT neurotransmitter clearing and ADORA2A adenosine receptor sensitivity shape evening sleep architecture and morning wakefulness." data-category="Sleep & Rhythms">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Neuro-Sleep Architecture</div>
+              <div class="hub-item-name">Adenosine Dynamics & Circadian Sleep Pacing</div>
+              <p class="hub-item-summary">How COMT neurotransmitter clearing and ADORA2A adenosine receptor sensitivity shape evening sleep architecture and morning wakefulness.</p>
+            </div>
+            <a href="../traits/circadian-sleep.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+          <div class="hub-item-card" data-title="Carbohydrate Glycemic Response & Insulin Pacing Carb Metabolism & Satiety" data-tags="Understand how PPARG insulin receptor variants and FTO ghrelin signaling dictate carbohydrate tolerance and body composition." data-category="Body & Weight">
+            <div>
+              <span class="pseo-badge" style="margin-bottom:0.5rem;">Trait Guide</span>
+              <div class="hub-item-symbol" style="font-size:1.25rem;">Carb Metabolism & Satiety</div>
+              <div class="hub-item-name">Carbohydrate Glycemic Response & Insulin Pacing</div>
+              <p class="hub-item-summary">Understand how PPARG insulin receptor variants and FTO ghrelin signaling dictate carbohydrate tolerance and body composition.</p>
+            </div>
+            <a href="../traits/carbohydrate-sensitivity.html" class="hub-item-link">Explore Trait Guide →</a>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">GenoTaste</div>
+          <p style="margin-bottom:1.5rem; max-width:320px;">Translating complex genomic reports into actionable, personalized lifestyle, nutrition, and wellness blueprints.</p>
+          <p style="font-size:0.85rem; color:var(--primary-gold);">NATURE • NURTURE • KNOWLEDGE</p>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">Programmatic SEO</h4>
+          <ul class="footer-links">
+            <li><a href="../genes/index.html">Gene Directory (12+)</a></li>
+            <li><a href="../traits/index.html">Wellness Traits</a></li>
+            <li><a href="../diets/index.html">Diet & Genotype Matchers</a></li>
+            <li><a href="../tools/index.html">Interactive Tools Suite</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">Interactive Tools</h4>
+          <ul class="footer-links">
+            <li><a href="../tools/caffeine-calculator.html">Caffeine Cut-Off Calculator</a></li>
+            <li><a href="../tools/genotype-diet-matcher.html">Genotype Diet Matcher</a></li>
+            <li><a href="../tools/gene-decoder-hub.html">Gene Decoder Search Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#FFF; margin-bottom:1rem;">GenoTaste Consults</h4>
+          <p style="font-size:0.85rem; margin-bottom:1rem;">Have an 80-page DNA report from 23andMe or Ancestry? Let our genomic specialists decode it for you.</p>
+          <a href="../index.html#packages" class="btn btn-primary" style="width:100%; text-align:center;">View Consultation Packages</a>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p><strong>Non-Medical Disclaimer:</strong> GenoTaste provides educational genomic consulting and lifestyle prioritization. GenoTaste does not diagnose, treat, or cure medical conditions. Always consult a qualified medical physician before altering prescribed medications or therapeutic regimens.</p>
+        <p style="margin-top:0.75rem;">© 2026 GenoTaste Wellness Consulting. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../app.js"></script>
+  <script src="../tools.js"></script>
+</body>
+</html>
