@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genomic Macronutrient & Diet Matcher Tool | GenoTaste Genomic Wellness</title>
-  <meta name="description" content="Calculate your baseline carb/fat/protein ratio and personalized nutrition guidelines based on FTO, APOE, PPARG, and ACTN3 variants.">
+  <title>Personalized Diet & Macro Calculator | GenoTaste Genomic Wellness</title>
+  <meta name="description" content="Understand how your DNA processes fats and carbs, then calculate your ideal daily protein, fat, and carbohydrate ratios.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://genotaste.com/tools/genotype-diet-matcher.html">
   
   <!-- OpenGraph / Social -->
-  <meta property="og:title" content="Genomic Macronutrient & Diet Matcher Tool">
-  <meta property="og:description" content="Calculate your baseline carb/fat/protein ratio and personalized nutrition guidelines based on FTO, APOE, PPARG, and ACTN3 variants.">
+  <meta property="og:title" content="Personalized Diet & Macro Calculator">
+  <meta property="og:description" content="Understand how your DNA processes fats and carbs, then calculate your ideal daily protein, fat, and carbohydrate ratios.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="../Logo_GenoTaste.png">
 
@@ -57,49 +57,69 @@
           <li class="separator">/</li>
           <li><a href="index.html">Tools</a></li>
           <li class="separator">/</li>
-          <li>Genotype Diet Matcher</li>
+          <li>Diet & Macro Calculator</li>
         </ul>
       </div>
-      <span class="pseo-badge">Interactive Calculator</span>
-      <h1 class="pseo-title">Genomic Macronutrient & Diet Matcher Tool</h1>
-      <p class="pseo-summary">Input your genetic variants to calculate your custom macronutrient target breakdown and high-leverage habits.</p>
+      <span class="pseo-badge">Body & Diet Matcher</span>
+      <h1 class="pseo-title">Personalized Diet & Macro Calculator</h1>
+      <p class="pseo-summary">Understand how your DNA influences fat and carbohydrate processing, then calculate your baseline daily protein, fat, and carb ratios.</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:0;">
     <div class="container" style="max-width:900px;">
+      <!-- STEP 1: KNOWLEDGE FIRST -->
+      <div class="pseo-card">
+        <h2 class="pseo-card-title">📖 Why Universal Diets Fail for Individual Biology</h2>
+        <p style="line-height:1.7; color:var(--navy-slate); font-size:1.05rem;">Different bodies process fats, proteins, and carbohydrates differently based on key genomic markers:</p>
+        <ul class="pseo-list" style="margin:1.25rem 0;">
+          <li><strong>APOE Saturated Fat Response:</strong> APOE4 carriers down-regulate cholesterol clearance on high-saturated-fat keto diets (butter, bacon), requiring extra virgin olive oil and omega-3s instead.</li>
+          <li><strong>FTO Appetite & Hunger Hormones:</strong> FTO A carriers experience higher post-meal ghrelin hunger spikes, requiring higher protein (30g+ per meal) and fiber to stay full.</li>
+          <li><strong>PPARG Insulin Sensitivity:</strong> Governs how efficiently cells clear glucose and process monounsaturated fats.</li>
+          <li><strong>ACTN3 Muscle Fiber Type:</strong> Sprint power (R/R) vs endurance (X/X) dictates protein pacing and workout recovery.</li>
+        </ul>
+        <p style="line-height:1.7; color:var(--navy-slate);">Read our guides on <a href="../diets/keto-apoe4.html" style="color:var(--primary-gold-dark); font-weight:600;">Is Keto Safe for APOE4?</a> and <a href="../diets/intermittent-fasting-fto.html" style="color:var(--primary-gold-dark); font-weight:600;">Fasting & FTO Appetite</a>.</p>
+      </div>
+
+      <!-- STEP 2: INTERACTIVE CALCULATOR -->
+      <div style="margin: 2.5rem 0 1rem 0;">
+        <span class="pseo-badge">Interactive Calculator</span>
+        <h2 style="font-family:'Outfit',sans-serif; font-size:1.75rem; color:var(--deep-charcoal);">⚡ Calculate Your Personal Macronutrient Split</h2>
+        <p style="color:var(--navy-slate); font-size:0.95rem;">Select your trait profiles below to calculate your target macronutrient distribution (Carbs %, Fats %, Protein %).</p>
+      </div>
+
       <div class="tool-card-box">
         <form id="genotypeMatcherForm" onsubmit="return false;">
           <div class="tool-form-grid">
             <div class="form-group">
-              <label>FTO Appetite & Satiety Variant</label>
+              <label>FTO Appetite & Satiety Profile</label>
               <select id="ftoSelect" class="form-control">
-                <option value="TT">FTO T/T (Normal Satiety)</option>
-                <option value="AA" selected>FTO A/A or A/T (Elevated Appetite / High Ghrelin)</option>
+                <option value="TT">FTO Normal Satiety (T/T)</option>
+                <option value="AA" selected>FTO High Appetite / Ghrelin Spike (A/A or A/T)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label>APOE Saturated Fat Variant</label>
+              <label>APOE Saturated Fat Response</label>
               <select id="apoeSelect" class="form-control">
-                <option value="E3E3">APOE e3/e3 (Baseline Lipid Clearance)</option>
-                <option value="E4" selected>APOE e4 Carrier (Sat Fat Hyper-Responder)</option>
+                <option value="E3E3">APOE Standard Fat Responder (e3/e3)</option>
+                <option value="E4" selected>APOE Saturated Fat Hyper-Responder (e4 Carrier)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label>PPARG Insulin Sensitivity Variant</label>
+              <label>PPARG Insulin Sensitivity</label>
               <select id="ppargSelect" class="form-control">
-                <option value="ProPro">PPARG Pro/Pro (Standard Insulin Signaling)</option>
-                <option value="Ala" selected>PPARG Pro/Ala or Ala/Ala (Insulin Sensitive)</option>
+                <option value="ProPro">PPARG Standard Insulin Signaling (Pro/Pro)</option>
+                <option value="Ala" selected>PPARG High Insulin Sensitivity (Pro/Ala)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label>ACTN3 Muscle Fiber Variant</label>
+              <label>ACTN3 Muscle Fiber Type</label>
               <select id="actn3Select" class="form-control">
-                <option value="RR" selected>ACTN3 R/R (Power & Sprint Fiber)</option>
-                <option value="XX">ACTN3 X/X (Endurance & High Fiber)</option>
+                <option value="RR" selected>ACTN3 Sprint & Power Genotype (R/R)</option>
+                <option value="XX">ACTN3 Endurance Genotype (X/X)</option>
               </select>
             </div>
           </div>
@@ -124,21 +144,18 @@
             </div>
 
             <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.1);">
-              <h4 style="color:var(--primary-gold); font-size:0.95rem; margin-bottom:0.75rem;">Calculated Genotype Warnings & Guidelines:</h4>
+              <h4 style="color:var(--primary-gold); font-size:0.95rem; margin-bottom:0.75rem;">Calculated Nutrition Guidelines & Warnings:</h4>
               <ul id="matcherWarnings" style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem; color:#E2E8F0;"></ul>
             </div>
           </div>
         </form>
       </div>
 
+      <!-- STEP 3: NEXT STEPS & CONSULTATION -->
       <div class="pseo-card">
-        <h2 class="pseo-card-title">🥗 Explore Genotype Diet Matcher Guides</h2>
-        <p style="line-height:1.7; color:var(--navy-slate);">Learn more about how specific diets match your genomic profile:</p>
-        <ul class="pseo-list" style="margin-top:1rem;">
-          <li><a href="../diets/keto-apoe4.html" style="color:var(--primary-gold-dark); font-weight:600;">Is Keto Safe for APOE4 Carriers?</a></li>
-          <li><a href="../diets/intermittent-fasting-fto.html" style="color:var(--primary-gold-dark); font-weight:600;">Intermittent Fasting & FTO Satiety Variants</a></li>
-          <li><a href="../diets/mediterranean-diet-pparg.html" style="color:var(--primary-gold-dark); font-weight:600;">Mediterranean Diet & PPARG Insulin Sensitivity</a></li>
-        </ul>
+        <h2 class="pseo-card-title">💡 Personalize Your Complete Nutrition Plan</h2>
+        <p style="line-height:1.7; color:var(--navy-slate);">Our calculated macronutrient targets provide an evidence-based baseline. Have an 80-page DNA report sitting on your laptop? Let a GenoTaste specialist translate your findings into a practical 5-step personal wellness blueprint.</p>
+        <a href="../index.html#packages" class="btn btn-primary" style="margin-top:1.25rem; display:inline-block;">Book GenoTaste Consultation</a>
       </div>
     </div>
   </section>

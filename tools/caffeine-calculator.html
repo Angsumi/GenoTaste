@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CYP1A2 Caffeine Cut-Off & Clearance Calculator | GenoTaste Genomic Wellness</title>
-  <meta name="description" content="Calculate your blood caffeine half-life, evening caffeine levels, and personalized last-cup cut-off time based on your CYP1A2 genotype.">
+  <title>Caffeine Speed & Sleep Cut-Off Calculator | GenoTaste Genomic Wellness</title>
+  <meta name="description" content="Learn how your liver clears caffeine, understand sleep latency impact, and calculate your personalized bedtime coffee curfew.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://genotaste.com/tools/caffeine-calculator.html">
   
   <!-- OpenGraph / Social -->
-  <meta property="og:title" content="CYP1A2 Caffeine Cut-Off & Clearance Calculator">
-  <meta property="og:description" content="Calculate your blood caffeine half-life, evening caffeine levels, and personalized last-cup cut-off time based on your CYP1A2 genotype.">
+  <meta property="og:title" content="Caffeine Speed & Sleep Cut-Off Calculator">
+  <meta property="og:description" content="Learn how your liver clears caffeine, understand sleep latency impact, and calculate your personalized bedtime coffee curfew.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="../Logo_GenoTaste.png">
 
@@ -60,23 +60,42 @@
           <li>Caffeine Calculator</li>
         </ul>
       </div>
-      <span class="pseo-badge">Interactive Calculator</span>
-      <h1 class="pseo-title">CYP1A2 Caffeine Cut-Off & Clearance Calculator</h1>
-      <p class="pseo-summary">Estimate your blood caffeine clearance curve, bedtime residual mg, and optimal last-cup cutoff time.</p>
+      <span class="pseo-badge">Sleep & Coffee Speed</span>
+      <h1 class="pseo-title">Caffeine Speed & Sleep Cut-Off Calculator</h1>
+      <p class="pseo-summary">Understand how your CYP1A2 liver enzyme clears caffeine, why coffee affects sleep latency differently, and calculate your personalized evening coffee curfew.</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:0;">
     <div class="container" style="max-width:900px;">
+      <!-- STEP 1: KNOWLEDGE FIRST -->
+      <div class="pseo-card">
+        <h2 class="pseo-card-title">📖 Understanding Coffee Clearance & Sleep</h2>
+        <p style="line-height:1.7; color:var(--navy-slate); font-size:1.05rem;">Caffeine clearance is governed primarily by your liver's <strong>CYP1A2 enzyme</strong> speed and your brain's <strong>ADORA2A adenosine receptors</strong>:</p>
+        <ul class="pseo-list" style="margin:1.25rem 0;">
+          <li><strong>Fast Coffee Clearers (CYP1A2 A/A):</strong> Process 50% of ingested caffeine in 2 to 4 hours. Morning or early afternoon coffee leaves minimal residual caffeine by bedtime.</li>
+          <li><strong>Slow Coffee Clearers (CYP1A2 A/C or C/C):</strong> Retain active caffeine in blood plasma for 8 to 10+ hours. A 2:00 PM coffee can linger into bedtime hours.</li>
+          <li><strong>Deep Sleep Impact:</strong> Even if you fall asleep easily, carrying >20mg of residual caffeine at bedtime blocks adenosine sleep pressure receptors, suppressing Stage N3 slow-wave deep sleep.</li>
+        </ul>
+        <p style="line-height:1.7; color:var(--navy-slate);">Read our full <a href="../genes/cyp1a2.html" style="color:var(--primary-gold-dark); font-weight:600;">CYP1A2 Coffee Clearance Gene Guide</a> or explore <a href="../traits/caffeine-metabolism.html" style="color:var(--primary-gold-dark); font-weight:600;">Caffeine Clearance & Sleep Latency</a>.</p>
+      </div>
+
+      <!-- STEP 2: INTERACTIVE CALCULATOR -->
+      <div style="margin: 2.5rem 0 1rem 0;">
+        <span class="pseo-badge">Interactive Calculator</span>
+        <h2 style="font-family:'Outfit',sans-serif; font-size:1.75rem; color:var(--deep-charcoal);">⚡ Calculate Your Bedtime Caffeine Level & Cut-Off Curfew</h2>
+        <p style="color:var(--navy-slate); font-size:0.95rem;">Select your coffee clearance speed, intake dose, and target bedtime below to calculate your residual mg and recommended last-cup cut-off time.</p>
+      </div>
+
       <div class="tool-card-box">
         <form id="caffeineCalcForm" onsubmit="return false;">
           <div class="tool-form-grid">
             <div class="form-group">
-              <label>CYP1A2 Genotype Speed</label>
+              <label>Select Your Coffee Clearance Speed</label>
               <select id="genotypeSelect" class="form-control">
-                <option value="fast">Fast Metabolizer (CYP1A2 *1A/*1A - A/A)</option>
-                <option value="intermediate" selected>Intermediate Metabolizer (CYP1A2 A/C)</option>
-                <option value="slow">Slow Metabolizer (CYP1A2 *1F - C/C)</option>
+                <option value="fast">Fast Coffee Clearer (CYP1A2 A/A)</option>
+                <option value="intermediate" selected>Intermediate Coffee Clearer (CYP1A2 A/C)</option>
+                <option value="slow">Slow Coffee Clearer (CYP1A2 C/C)</option>
               </select>
             </div>
             <div class="form-group">
@@ -87,7 +106,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Time of Caffeine Intake</label>
+              <label>Time of Coffee Intake</label>
               <select id="intakeTime" class="form-control">
                 <option value="7">7:00 AM</option>
                 <option value="8">8:00 AM</option>
@@ -138,10 +157,15 @@
         </form>
       </div>
 
+      <!-- STEP 3: NEXT STEPS & CONSULTATION -->
       <div class="pseo-card">
-        <h2 class="pseo-card-title">☕ Biological Mechanism Behind the Calculator</h2>
-        <p style="line-height:1.7; color:var(--navy-slate);">Caffeine clearance is mediated in the liver by Cytochrome P450 1A2 (CYP1A2). Fast metabolizers (*1A/*1A) break down 50% of ingested caffeine in 3 to 4 hours. Slow metabolizers (*1F C/C) retain active caffeine for up to 9 to 10 hours. Even small residual amounts (>20mg) at bedtime bind brain ADORA2A adenosine receptors, suppressing Stage N3 slow-wave deep sleep without necessarily causing insomnia.</p>
-        <p style="line-height:1.7; color:var(--navy-slate); margin-top:1rem;">Read our full <a href="../genes/cyp1a2.html" style="color:var(--primary-gold-dark); font-weight:600;">CYP1A2 Gene Guide</a> or explore <a href="../traits/caffeine-metabolism.html" style="color:var(--primary-gold-dark); font-weight:600;">Caffeine Clearance & Sleep Latency</a>.</p>
+        <h2 class="pseo-card-title">💡 GenoTaste Recommendations</h2>
+        <ul class="pseo-list">
+          <li>If carrying slow clearance status, shift your last coffee dose before 12:00 PM.</li>
+          <li>Incorporate green tea or matcha in the early afternoon for natural L-theanine calming support.</li>
+          <li>Have an existing DNA report? Book a GenoTaste Report Clarity session to personalize your complete sleep and energy blueprint.</li>
+        </ul>
+        <a href="../index.html#packages" class="btn btn-primary" style="margin-top:1.25rem; display:inline-block;">Book GenoTaste Consultation</a>
       </div>
     </div>
   </section>

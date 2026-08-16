@@ -1,25 +1,25 @@
 [
   {
     "id": "caffeine-calculator",
-    "name": "CYP1A2 Caffeine Clearance & Bedtime Cut-Off Calculator",
+    "name": "Caffeine Speed & Sleep Cut-Off Calculator",
     "tag": "Sleep & Rhythms",
-    "summary": "Calculate your blood caffeine half-life, remaining evening caffeine concentration (mg), and personalized last-cup cut-off time based on your CYP1A2 genotype.",
+    "summary": "Learn how your body clears caffeine, then calculate your bedtime coffee concentration (mg) and personalized last-cup curfew.",
     "icon": "☕",
     "url": "/tools/caffeine-calculator.html"
   },
   {
     "id": "genotype-diet-matcher",
-    "name": "Genomic Macronutrient & Diet Matcher Tool",
+    "name": "Personalized Diet & Macro Calculator",
     "tag": "Body & Weight",
-    "summary": "Input your key gene traits (FTO, PPARG, APOE4, LCT) to generate your optimal daily carb/fat/protein macro breakdown and dietary warning guide.",
+    "summary": "Understand how your DNA processes fats and carbs, then calculate your ideal daily protein, fat, and carbohydrate ratios.",
     "icon": "🥗",
     "url": "/tools/genotype-diet-matcher.html"
   },
   {
     "id": "gene-decoder-hub",
-    "name": "Interactive Gene & Trait Decoder Hub",
-    "tag": "Interactive Directory",
-    "summary": "Live searchable database across all wellness genes, traits, and genotype-matched diets with biological mechanism drawer previews and direct pSEO links.",
+    "name": "DNA Trait & Gene Knowledge Hub",
+    "tag": "Interactive Hub",
+    "summary": "Search any wellness gene (CYP1A2, MTHFR, APOE, ACTN3) or health symptom (coffee jitters, fatigue, weight) in everyday plain language.",
     "icon": "🧬",
     "url": "/tools/gene-decoder-hub.html"
   }

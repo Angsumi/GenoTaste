@@ -625,8 +625,8 @@ function buildToolPages() {
 
   // 2. Caffeine Calculator Page
   let caffHtml = renderHeader(
-    "CYP1A2 Caffeine Cut-Off & Clearance Calculator",
-    "Calculate your blood caffeine half-life, evening caffeine levels, and personalized last-cup cut-off time based on your CYP1A2 genotype.",
+    "Caffeine Speed & Sleep Cut-Off Calculator",
+    "Learn how your liver clears caffeine, understand sleep latency impact, and calculate your personalized bedtime coffee curfew.",
     "https://genotaste.com/tools/caffeine-calculator.html",
     1
   );
@@ -643,23 +643,42 @@ function buildToolPages() {
           <li>Caffeine Calculator</li>
         </ul>
       </div>
-      <span class="pseo-badge">Interactive Calculator</span>
-      <h1 class="pseo-title">CYP1A2 Caffeine Cut-Off & Clearance Calculator</h1>
-      <p class="pseo-summary">Estimate your blood caffeine clearance curve, bedtime residual mg, and optimal last-cup cutoff time.</p>
+      <span class="pseo-badge">Sleep & Coffee Speed</span>
+      <h1 class="pseo-title">Caffeine Speed & Sleep Cut-Off Calculator</h1>
+      <p class="pseo-summary">Understand how your CYP1A2 liver enzyme clears caffeine, why coffee affects sleep latency differently, and calculate your personalized evening coffee curfew.</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:0;">
     <div class="container" style="max-width:900px;">
+      <!-- STEP 1: KNOWLEDGE FIRST -->
+      <div class="pseo-card">
+        <h2 class="pseo-card-title">📖 Understanding Coffee Clearance & Sleep</h2>
+        <p style="line-height:1.7; color:var(--navy-slate); font-size:1.05rem;">Caffeine clearance is governed primarily by your liver's <strong>CYP1A2 enzyme</strong> speed and your brain's <strong>ADORA2A adenosine receptors</strong>:</p>
+        <ul class="pseo-list" style="margin:1.25rem 0;">
+          <li><strong>Fast Coffee Clearers (CYP1A2 A/A):</strong> Process 50% of ingested caffeine in 2 to 4 hours. Morning or early afternoon coffee leaves minimal residual caffeine by bedtime.</li>
+          <li><strong>Slow Coffee Clearers (CYP1A2 A/C or C/C):</strong> Retain active caffeine in blood plasma for 8 to 10+ hours. A 2:00 PM coffee can linger into bedtime hours.</li>
+          <li><strong>Deep Sleep Impact:</strong> Even if you fall asleep easily, carrying >20mg of residual caffeine at bedtime blocks adenosine sleep pressure receptors, suppressing Stage N3 slow-wave deep sleep.</li>
+        </ul>
+        <p style="line-height:1.7; color:var(--navy-slate);">Read our full <a href="../genes/cyp1a2.html" style="color:var(--primary-gold-dark); font-weight:600;">CYP1A2 Coffee Clearance Gene Guide</a> or explore <a href="../traits/caffeine-metabolism.html" style="color:var(--primary-gold-dark); font-weight:600;">Caffeine Clearance & Sleep Latency</a>.</p>
+      </div>
+
+      <!-- STEP 2: INTERACTIVE CALCULATOR -->
+      <div style="margin: 2.5rem 0 1rem 0;">
+        <span class="pseo-badge">Interactive Calculator</span>
+        <h2 style="font-family:'Outfit',sans-serif; font-size:1.75rem; color:var(--deep-charcoal);">⚡ Calculate Your Bedtime Caffeine Level & Cut-Off Curfew</h2>
+        <p style="color:var(--navy-slate); font-size:0.95rem;">Select your coffee clearance speed, intake dose, and target bedtime below to calculate your residual mg and recommended last-cup cut-off time.</p>
+      </div>
+
       <div class="tool-card-box">
         <form id="caffeineCalcForm" onsubmit="return false;">
           <div class="tool-form-grid">
             <div class="form-group">
-              <label>CYP1A2 Genotype Speed</label>
+              <label>Select Your Coffee Clearance Speed</label>
               <select id="genotypeSelect" class="form-control">
-                <option value="fast">Fast Metabolizer (CYP1A2 *1A/*1A - A/A)</option>
-                <option value="intermediate" selected>Intermediate Metabolizer (CYP1A2 A/C)</option>
-                <option value="slow">Slow Metabolizer (CYP1A2 *1F - C/C)</option>
+                <option value="fast">Fast Coffee Clearer (CYP1A2 A/A)</option>
+                <option value="intermediate" selected>Intermediate Coffee Clearer (CYP1A2 A/C)</option>
+                <option value="slow">Slow Coffee Clearer (CYP1A2 C/C)</option>
               </select>
             </div>
             <div class="form-group">
@@ -670,7 +689,7 @@ function buildToolPages() {
               </div>
             </div>
             <div class="form-group">
-              <label>Time of Caffeine Intake</label>
+              <label>Time of Coffee Intake</label>
               <select id="intakeTime" class="form-control">
                 <option value="7">7:00 AM</option>
                 <option value="8">8:00 AM</option>
@@ -721,10 +740,15 @@ function buildToolPages() {
         </form>
       </div>
 
+      <!-- STEP 3: NEXT STEPS & CONSULTATION -->
       <div class="pseo-card">
-        <h2 class="pseo-card-title">☕ Biological Mechanism Behind the Calculator</h2>
-        <p style="line-height:1.7; color:var(--navy-slate);">Caffeine clearance is mediated in the liver by Cytochrome P450 1A2 (CYP1A2). Fast metabolizers (*1A/*1A) break down 50% of ingested caffeine in 3 to 4 hours. Slow metabolizers (*1F C/C) retain active caffeine for up to 9 to 10 hours. Even small residual amounts (>20mg) at bedtime bind brain ADORA2A adenosine receptors, suppressing Stage N3 slow-wave deep sleep without necessarily causing insomnia.</p>
-        <p style="line-height:1.7; color:var(--navy-slate); margin-top:1rem;">Read our full <a href="../genes/cyp1a2.html" style="color:var(--primary-gold-dark); font-weight:600;">CYP1A2 Gene Guide</a> or explore <a href="../traits/caffeine-metabolism.html" style="color:var(--primary-gold-dark); font-weight:600;">Caffeine Clearance & Sleep Latency</a>.</p>
+        <h2 class="pseo-card-title">💡 GenoTaste Recommendations</h2>
+        <ul class="pseo-list">
+          <li>If carrying slow clearance status, shift your last coffee dose before 12:00 PM.</li>
+          <li>Incorporate green tea or matcha in the early afternoon for natural L-theanine calming support.</li>
+          <li>Have an existing DNA report? Book a GenoTaste Report Clarity session to personalize your complete sleep and energy blueprint.</li>
+        </ul>
+        <a href="../index.html#packages" class="btn btn-primary" style="margin-top:1.25rem; display:inline-block;">Book GenoTaste Consultation</a>
       </div>
     </div>
   </section>`;
@@ -734,8 +758,8 @@ function buildToolPages() {
 
   // 3. Genotype Diet Matcher Page
   let dietToolHtml = renderHeader(
-    "Genomic Macronutrient & Diet Matcher Tool",
-    "Calculate your baseline carb/fat/protein ratio and personalized nutrition guidelines based on FTO, APOE, PPARG, and ACTN3 variants.",
+    "Personalized Diet & Macro Calculator",
+    "Understand how your DNA processes fats and carbs, then calculate your ideal daily protein, fat, and carbohydrate ratios.",
     "https://genotaste.com/tools/genotype-diet-matcher.html",
     1
   );
@@ -749,49 +773,69 @@ function buildToolPages() {
           <li class="separator">/</li>
           <li><a href="index.html">Tools</a></li>
           <li class="separator">/</li>
-          <li>Genotype Diet Matcher</li>
+          <li>Diet & Macro Calculator</li>
         </ul>
       </div>
-      <span class="pseo-badge">Interactive Calculator</span>
-      <h1 class="pseo-title">Genomic Macronutrient & Diet Matcher Tool</h1>
-      <p class="pseo-summary">Input your genetic variants to calculate your custom macronutrient target breakdown and high-leverage habits.</p>
+      <span class="pseo-badge">Body & Diet Matcher</span>
+      <h1 class="pseo-title">Personalized Diet & Macro Calculator</h1>
+      <p class="pseo-summary">Understand how your DNA influences fat and carbohydrate processing, then calculate your baseline daily protein, fat, and carb ratios.</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:0;">
     <div class="container" style="max-width:900px;">
+      <!-- STEP 1: KNOWLEDGE FIRST -->
+      <div class="pseo-card">
+        <h2 class="pseo-card-title">📖 Why Universal Diets Fail for Individual Biology</h2>
+        <p style="line-height:1.7; color:var(--navy-slate); font-size:1.05rem;">Different bodies process fats, proteins, and carbohydrates differently based on key genomic markers:</p>
+        <ul class="pseo-list" style="margin:1.25rem 0;">
+          <li><strong>APOE Saturated Fat Response:</strong> APOE4 carriers down-regulate cholesterol clearance on high-saturated-fat keto diets (butter, bacon), requiring extra virgin olive oil and omega-3s instead.</li>
+          <li><strong>FTO Appetite & Hunger Hormones:</strong> FTO A carriers experience higher post-meal ghrelin hunger spikes, requiring higher protein (30g+ per meal) and fiber to stay full.</li>
+          <li><strong>PPARG Insulin Sensitivity:</strong> Governs how efficiently cells clear glucose and process monounsaturated fats.</li>
+          <li><strong>ACTN3 Muscle Fiber Type:</strong> Sprint power (R/R) vs endurance (X/X) dictates protein pacing and workout recovery.</li>
+        </ul>
+        <p style="line-height:1.7; color:var(--navy-slate);">Read our guides on <a href="../diets/keto-apoe4.html" style="color:var(--primary-gold-dark); font-weight:600;">Is Keto Safe for APOE4?</a> and <a href="../diets/intermittent-fasting-fto.html" style="color:var(--primary-gold-dark); font-weight:600;">Fasting & FTO Appetite</a>.</p>
+      </div>
+
+      <!-- STEP 2: INTERACTIVE CALCULATOR -->
+      <div style="margin: 2.5rem 0 1rem 0;">
+        <span class="pseo-badge">Interactive Calculator</span>
+        <h2 style="font-family:'Outfit',sans-serif; font-size:1.75rem; color:var(--deep-charcoal);">⚡ Calculate Your Personal Macronutrient Split</h2>
+        <p style="color:var(--navy-slate); font-size:0.95rem;">Select your trait profiles below to calculate your target macronutrient distribution (Carbs %, Fats %, Protein %).</p>
+      </div>
+
       <div class="tool-card-box">
         <form id="genotypeMatcherForm" onsubmit="return false;">
           <div class="tool-form-grid">
             <div class="form-group">
-              <label>FTO Appetite & Satiety Variant</label>
+              <label>FTO Appetite & Satiety Profile</label>
               <select id="ftoSelect" class="form-control">
-                <option value="TT">FTO T/T (Normal Satiety)</option>
-                <option value="AA" selected>FTO A/A or A/T (Elevated Appetite / High Ghrelin)</option>
+                <option value="TT">FTO Normal Satiety (T/T)</option>
+                <option value="AA" selected>FTO High Appetite / Ghrelin Spike (A/A or A/T)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label>APOE Saturated Fat Variant</label>
+              <label>APOE Saturated Fat Response</label>
               <select id="apoeSelect" class="form-control">
-                <option value="E3E3">APOE e3/e3 (Baseline Lipid Clearance)</option>
-                <option value="E4" selected>APOE e4 Carrier (Sat Fat Hyper-Responder)</option>
+                <option value="E3E3">APOE Standard Fat Responder (e3/e3)</option>
+                <option value="E4" selected>APOE Saturated Fat Hyper-Responder (e4 Carrier)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label>PPARG Insulin Sensitivity Variant</label>
+              <label>PPARG Insulin Sensitivity</label>
               <select id="ppargSelect" class="form-control">
-                <option value="ProPro">PPARG Pro/Pro (Standard Insulin Signaling)</option>
-                <option value="Ala" selected>PPARG Pro/Ala or Ala/Ala (Insulin Sensitive)</option>
+                <option value="ProPro">PPARG Standard Insulin Signaling (Pro/Pro)</option>
+                <option value="Ala" selected>PPARG High Insulin Sensitivity (Pro/Ala)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label>ACTN3 Muscle Fiber Variant</label>
+              <label>ACTN3 Muscle Fiber Type</label>
               <select id="actn3Select" class="form-control">
-                <option value="RR" selected>ACTN3 R/R (Power & Sprint Fiber)</option>
-                <option value="XX">ACTN3 X/X (Endurance & High Fiber)</option>
+                <option value="RR" selected>ACTN3 Sprint & Power Genotype (R/R)</option>
+                <option value="XX">ACTN3 Endurance Genotype (X/X)</option>
               </select>
             </div>
           </div>
@@ -816,21 +860,18 @@ function buildToolPages() {
             </div>
 
             <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.1);">
-              <h4 style="color:var(--primary-gold); font-size:0.95rem; margin-bottom:0.75rem;">Calculated Genotype Warnings & Guidelines:</h4>
+              <h4 style="color:var(--primary-gold); font-size:0.95rem; margin-bottom:0.75rem;">Calculated Nutrition Guidelines & Warnings:</h4>
               <ul id="matcherWarnings" style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem; color:#E2E8F0;"></ul>
             </div>
           </div>
         </form>
       </div>
 
+      <!-- STEP 3: NEXT STEPS & CONSULTATION -->
       <div class="pseo-card">
-        <h2 class="pseo-card-title">🥗 Explore Genotype Diet Matcher Guides</h2>
-        <p style="line-height:1.7; color:var(--navy-slate);">Learn more about how specific diets match your genomic profile:</p>
-        <ul class="pseo-list" style="margin-top:1rem;">
-          <li><a href="../diets/keto-apoe4.html" style="color:var(--primary-gold-dark); font-weight:600;">Is Keto Safe for APOE4 Carriers?</a></li>
-          <li><a href="../diets/intermittent-fasting-fto.html" style="color:var(--primary-gold-dark); font-weight:600;">Intermittent Fasting & FTO Satiety Variants</a></li>
-          <li><a href="../diets/mediterranean-diet-pparg.html" style="color:var(--primary-gold-dark); font-weight:600;">Mediterranean Diet & PPARG Insulin Sensitivity</a></li>
-        </ul>
+        <h2 class="pseo-card-title">💡 Personalize Your Complete Nutrition Plan</h2>
+        <p style="line-height:1.7; color:var(--navy-slate);">Our calculated macronutrient targets provide an evidence-based baseline. Have an 80-page DNA report sitting on your laptop? Let a GenoTaste specialist translate your findings into a practical 5-step personal wellness blueprint.</p>
+        <a href="../index.html#packages" class="btn btn-primary" style="margin-top:1.25rem; display:inline-block;">Book GenoTaste Consultation</a>
       </div>
     </div>
   </section>`;
@@ -840,8 +881,8 @@ function buildToolPages() {
 
   // 4. Gene Decoder Hub Page
   let hubHtml = renderHeader(
-    "Interactive Gene & Trait Decoder Hub",
-    "Live search and filter across all 12+ wellness genes, physiological trait guides, and genotype-matched diets.",
+    "DNA Trait & Gene Knowledge Hub",
+    "Search any wellness gene (CYP1A2, MTHFR, APOE) or symptom keyword in everyday plain language.",
     "https://genotaste.com/tools/gene-decoder-hub.html",
     1
   );
@@ -855,12 +896,12 @@ function buildToolPages() {
           <li class="separator">/</li>
           <li><a href="index.html">Tools</a></li>
           <li class="separator">/</li>
-          <li>Decoder Hub</li>
+          <li>Knowledge Hub</li>
         </ul>
       </div>
-      <span class="pseo-badge">Live Search Hub</span>
-      <h1 class="pseo-title">Interactive Gene & Trait Decoder Hub</h1>
-      <p class="pseo-summary">Search any gene symbol (CYP1A2, MTHFR, APOE, ACTN3), trait keyword, or diet strategy in real time.</p>
+      <span class="pseo-badge">Search & Learn</span>
+      <h1 class="pseo-title">DNA Trait & Gene Knowledge Hub</h1>
+      <p class="pseo-summary">Search any wellness gene symbol or everyday health symptom (coffee jitters, fatigue, weight, muscle recovery) in plain language.</p>
     </div>
   </section>
 
@@ -868,7 +909,7 @@ function buildToolPages() {
     <div class="container">
       <!-- Search & Filters -->
       <div class="hub-search-bar">
-        <input type="text" id="hubSearchInput" class="hub-search-input" placeholder="🔍 Search by gene symbol (e.g. MTHFR), trait (caffeine, sleep, fat), or diet...">
+        <input type="text" id="hubSearchInput" class="hub-search-input" placeholder="🔍 Type a symptom (e.g. coffee, fatigue, sleep, fat) or gene (e.g. MTHFR, CYP1A2)...">
       </div>
 
       <div class="hub-filter-pills">
@@ -891,7 +932,7 @@ function buildToolPages() {
               <div class="hub-item-name">${g.name}</div>
               <p class="hub-item-summary">${g.summary}</p>
             </div>
-            <a href="../genes/${g.id}.html" class="hub-item-link">Explore Gene Guide →</a>
+            <a href="../genes/${g.id}.html" class="hub-item-link">Read Plain Language Guide →</a>
           </div>
         `).join('')}
 
@@ -903,7 +944,7 @@ function buildToolPages() {
               <div class="hub-item-name">${t.title}</div>
               <p class="hub-item-summary">${t.summary}</p>
             </div>
-            <a href="../traits/${t.id}.html" class="hub-item-link">Explore Trait Guide →</a>
+            <a href="../traits/${t.id}.html" class="hub-item-link">Read Trait Guide →</a>
           </div>
         `).join('')}
       </div>
