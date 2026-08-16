@@ -132,7 +132,7 @@ function buildGenePages() {
   let indexHtml = renderHeader(
     "Gene & Variant Directory | Genomic Wellness Guides",
     "Explore GenoTaste's comprehensive genomic guides for CYP1A2, MTHFR, APOE, ACTN3, FTO, SOD2, FUT2, VDR, COMT, LCT, PPARG, and ADORA2A.",
-    "https://genotaste.com/genes/index.html",
+    "https://angsumi.github.io/GenoTaste/genes/index.html",
     1
   );
 
@@ -178,7 +178,7 @@ function buildGenePages() {
     let html = renderHeader(
       `${gene.symbol} Gene Guide (${gene.tag})`,
       `${gene.summary.slice(0, 155)}...`,
-      `https://genotaste.com/genes/${gene.id}.html`,
+      `https://angsumi.github.io/GenoTaste/genes/${gene.id}.html`,
       1
     );
 
@@ -189,7 +189,7 @@ function buildGenePages() {
       "name": gene.symbol,
       "description": gene.summary,
       "inDefinedTermSet": "Genomic Wellness Database",
-      "url": `https://genotaste.com/genes/${gene.id}.html`
+      "url": `https://angsumi.github.io/GenoTaste/genes/${gene.id}.html`
     };
 
     html += `
@@ -313,7 +313,7 @@ function buildTraitPages() {
   let indexHtml = renderHeader(
     "Wellness Traits & Symptoms Guide",
     "Evidence-based wellness guides covering caffeine clearance, B-vitamin methylation, saturated fat response, muscle recovery, and sleep.",
-    "https://genotaste.com/traits/index.html",
+    "https://angsumi.github.io/GenoTaste/traits/index.html",
     1
   );
 
@@ -359,7 +359,7 @@ function buildTraitPages() {
     let html = renderHeader(
       `${trait.title} | Genomic Trait Guide`,
       trait.summary,
-      `https://genotaste.com/traits/${trait.id}.html`,
+      `https://angsumi.github.io/GenoTaste/traits/${trait.id}.html`,
       1
     );
 
@@ -439,7 +439,7 @@ function buildDietPages() {
   let indexHtml = renderHeader(
     "Genotype & Diet Matcher Library",
     "Evaluate Keto, Mediterranean, Intermittent Fasting, and High-Protein diets against your specific DNA variants.",
-    "https://genotaste.com/diets/index.html",
+    "https://angsumi.github.io/GenoTaste/diets/index.html",
     1
   );
 
@@ -484,7 +484,7 @@ function buildDietPages() {
     let html = renderHeader(
       `${diet.title} | Genotype Diet Guide`,
       diet.summary,
-      `https://genotaste.com/diets/${diet.id}.html`,
+      `https://angsumi.github.io/GenoTaste/diets/${diet.id}.html`,
       1
     );
 
@@ -582,7 +582,7 @@ function buildToolPages() {
   let indexHtml = renderHeader(
     "Interactive Genomic Wellness Tools Suite",
     "Calculators and tools: CYP1A2 Caffeine Cut-Off, Genomic Macronutrient Matcher, and Gene Decoder Search Hub.",
-    "https://genotaste.com/tools/index.html",
+    "https://angsumi.github.io/GenoTaste/tools/index.html",
     1
   );
 
@@ -627,7 +627,7 @@ function buildToolPages() {
   let caffHtml = renderHeader(
     "Caffeine Speed & Sleep Cut-Off Calculator",
     "Learn how your liver clears caffeine, understand sleep latency impact, and calculate your personalized bedtime coffee curfew.",
-    "https://genotaste.com/tools/caffeine-calculator.html",
+    "https://angsumi.github.io/GenoTaste/tools/caffeine-calculator.html",
     1
   );
 
@@ -760,7 +760,7 @@ function buildToolPages() {
   let dietToolHtml = renderHeader(
     "Personalized Diet & Macro Calculator",
     "Understand how your DNA processes fats and carbs, then calculate your ideal daily protein, fat, and carbohydrate ratios.",
-    "https://genotaste.com/tools/genotype-diet-matcher.html",
+    "https://angsumi.github.io/GenoTaste/tools/genotype-diet-matcher.html",
     1
   );
 
@@ -883,7 +883,7 @@ function buildToolPages() {
   let hubHtml = renderHeader(
     "DNA Trait & Gene Knowledge Hub",
     "Search any wellness gene (CYP1A2, MTHFR, APOE) or symptom keyword in everyday plain language.",
-    "https://genotaste.com/tools/gene-decoder-hub.html",
+    "https://angsumi.github.io/GenoTaste/tools/gene-decoder-hub.html",
     1
   );
 
@@ -958,19 +958,19 @@ function buildToolPages() {
 // Generate Sitemap.xml & Robots.txt
 function generateSitemapAndRobots() {
   const urls = [
-    'https://genotaste.com/index.html',
-    'https://genotaste.com/genes/index.html',
-    'https://genotaste.com/traits/index.html',
-    'https://genotaste.com/diets/index.html',
-    'https://genotaste.com/tools/index.html',
-    'https://genotaste.com/tools/caffeine-calculator.html',
-    'https://genotaste.com/tools/genotype-diet-matcher.html',
-    'https://genotaste.com/tools/gene-decoder-hub.html'
+    'https://angsumi.github.io/GenoTaste/index.html',
+    'https://angsumi.github.io/GenoTaste/genes/index.html',
+    'https://angsumi.github.io/GenoTaste/traits/index.html',
+    'https://angsumi.github.io/GenoTaste/diets/index.html',
+    'https://angsumi.github.io/GenoTaste/tools/index.html',
+    'https://angsumi.github.io/GenoTaste/tools/caffeine-calculator.html',
+    'https://angsumi.github.io/GenoTaste/tools/genotype-diet-matcher.html',
+    'https://angsumi.github.io/GenoTaste/tools/gene-decoder-hub.html'
   ];
 
-  genes.forEach(g => urls.push(`https://genotaste.com/genes/${g.id}.html`));
-  traits.forEach(t => urls.push(`https://genotaste.com/traits/${t.id}.html`));
-  diets.forEach(d => urls.push(`https://genotaste.com/diets/${d.id}.html`));
+  genes.forEach(g => urls.push(`https://angsumi.github.io/GenoTaste/genes/${g.id}.html`));
+  traits.forEach(t => urls.push(`https://angsumi.github.io/GenoTaste/traits/${t.id}.html`));
+  diets.forEach(d => urls.push(`https://angsumi.github.io/GenoTaste/diets/${d.id}.html`));
 
   const lastmod = new Date().toISOString().split('T')[0];
 
@@ -989,7 +989,7 @@ ${urls.map(url => `  <url>
   const robotsTxt = `User-agent: *
 Allow: /
 
-Sitemap: https://genotaste.com/sitemap.xml`;
+Sitemap: https://angsumi.github.io/GenoTaste/sitemap.xml`;
 
   fs.writeFileSync(path.join(ROOT_DIR, 'robots.txt'), robotsTxt);
 }

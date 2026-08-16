@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://genotaste.com/sitemap.xml
+Sitemap: https://angsumi.github.io/GenoTaste/sitemap.xml
